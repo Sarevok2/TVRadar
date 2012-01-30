@@ -1,0 +1,2368 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv source-info-url="http://www.directv.com/" source-info-name="DirecTV" generator-info-name="XMLTV" generator-info-url="http://www.xmltv.org/">
+  <channel id="0001.directv.com">
+    <display-name>INFO</display-name>
+    <display-name>1</display-name>
+    <display-name>1</display-name>
+  </channel>
+  <channel id="0070.directv.com">
+    <display-name>HBOH</display-name>
+    <display-name>70</display-name>
+    <display-name>70</display-name>
+  </channel>
+  <channel id="0071.directv.com">
+    <display-name>JTV</display-name>
+    <display-name>71</display-name>
+    <display-name>71</display-name>
+  </channel>
+  <channel id="0072.directv.com">
+    <display-name>ES2H</display-name>
+    <display-name>72</display-name>
+    <display-name>72</display-name>
+  </channel>
+  <channel id="0073.directv.com">
+    <display-name>ESPH</display-name>
+    <display-name>73</display-name>
+    <display-name>73</display-name>
+  </channel>
+  <channel id="0074.directv.com">
+    <display-name>BUY</display-name>
+    <display-name>74</display-name>
+    <display-name>74</display-name>
+  </channel>
+  <channel id="0075.directv.com">
+    <display-name>TNTH</display-name>
+    <display-name>75</display-name>
+    <display-name>75</display-name>
+  </channel>
+  <channel id="0076.directv.com">
+    <display-name>HDTH</display-name>
+    <display-name>76</display-name>
+    <display-name>76</display-name>
+  </channel>
+  <channel id="0077.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>77</display-name>
+    <display-name>77</display-name>
+  </channel>
+  <channel id="0078.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>78</display-name>
+    <display-name>78</display-name>
+  </channel>
+  <channel id="0079.directv.com">
+    <display-name>HDN</display-name>
+    <display-name>79</display-name>
+    <display-name>79</display-name>
+  </channel>
+  <channel id="0080.directv.com">
+    <display-name>HOME</display-name>
+    <display-name>80</display-name>
+    <display-name>80</display-name>
+  </channel>
+  <channel id="0081.directv.com">
+    <display-name>AOR</display-name>
+    <display-name>81</display-name>
+    <display-name>81</display-name>
+  </channel>
+  <channel id="0082.directv.com">
+    <display-name>P1TV</display-name>
+    <display-name>82</display-name>
+    <display-name>82</display-name>
+  </channel>
+  <channel id="0085.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>85</display-name>
+    <display-name>85</display-name>
+  </channel>
+  <channel id="0088.directv.com">
+    <display-name>IRTV</display-name>
+    <display-name>88</display-name>
+    <display-name>88</display-name>
+  </channel>
+  <channel id="0094.directv.com">
+    <display-name>VALU</display-name>
+    <display-name>94</display-name>
+    <display-name>94</display-name>
+  </channel>
+  <channel id="0095.directv.com">
+    <display-name>CSHP</display-name>
+    <display-name>95</display-name>
+    <display-name>95</display-name>
+  </channel>
+  <channel id="0096.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>96</display-name>
+    <display-name>96</display-name>
+  </channel>
+  <channel id="0097.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>97</display-name>
+    <display-name>97</display-name>
+  </channel>
+  <channel id="0098.directv.com">
+    <display-name>BUYP</display-name>
+    <display-name>98</display-name>
+    <display-name>98</display-name>
+  </channel>
+  <channel id="0100.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>100</display-name>
+    <display-name>100</display-name>
+  </channel>
+  <channel id="0101.directv.com">
+    <display-name>T101</display-name>
+    <display-name>101</display-name>
+    <display-name>101</display-name>
+  </channel>
+  <channel id="0102.directv.com">
+    <display-name>NMX</display-name>
+    <display-name>102</display-name>
+    <display-name>102</display-name>
+  </channel>
+  <channel id="0104.directv.com">
+    <display-name>SMX</display-name>
+    <display-name>104</display-name>
+    <display-name>104</display-name>
+  </channel>
+  <channel id="0105.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>105</display-name>
+    <display-name>105</display-name>
+  </channel>
+  <channel id="0106.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>106</display-name>
+    <display-name>106</display-name>
+  </channel>
+  <channel id="0110.directv.com">
+    <display-name>GAME</display-name>
+    <display-name>110</display-name>
+    <display-name>110</display-name>
+  </channel>
+  <channel id="0111.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>111</display-name>
+    <display-name>111</display-name>
+  </channel>
+  <channel id="0114.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>114</display-name>
+    <display-name>114</display-name>
+  </channel>
+  <channel id="0115.directv.com">
+    <display-name>IAC</display-name>
+    <display-name>115</display-name>
+    <display-name>115</display-name>
+  </channel>
+  <channel id="0119.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>119</display-name>
+    <display-name>119</display-name>
+  </channel>
+  <channel id="0120.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>120</display-name>
+    <display-name>120</display-name>
+  </channel>
+  <channel id="0121.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>121</display-name>
+    <display-name>121</display-name>
+  </channel>
+  <channel id="0122.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>122</display-name>
+    <display-name>122</display-name>
+  </channel>
+  <channel id="0123.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>123</display-name>
+    <display-name>123</display-name>
+  </channel>
+  <channel id="0124.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>124</display-name>
+    <display-name>124</display-name>
+  </channel>
+  <channel id="0125.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>125</display-name>
+    <display-name>125</display-name>
+  </channel>
+  <channel id="0126.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>126</display-name>
+    <display-name>126</display-name>
+  </channel>
+  <channel id="0128.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>128</display-name>
+    <display-name>128</display-name>
+  </channel>
+  <channel id="0129.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>129</display-name>
+    <display-name>129</display-name>
+  </channel>
+  <channel id="0130.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>130</display-name>
+    <display-name>130</display-name>
+  </channel>
+  <channel id="0136.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>136</display-name>
+    <display-name>136</display-name>
+  </channel>
+  <channel id="0137.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>137</display-name>
+    <display-name>137</display-name>
+  </channel>
+  <channel id="0138.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>138</display-name>
+    <display-name>138</display-name>
+  </channel>
+  <channel id="0139.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>139</display-name>
+    <display-name>139</display-name>
+  </channel>
+  <channel id="0140.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>140</display-name>
+    <display-name>140</display-name>
+  </channel>
+  <channel id="0141.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>141</display-name>
+    <display-name>141</display-name>
+  </channel>
+  <channel id="0142.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>142</display-name>
+    <display-name>142</display-name>
+  </channel>
+  <channel id="0143.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>143</display-name>
+    <display-name>143</display-name>
+  </channel>
+  <channel id="0144.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>144</display-name>
+    <display-name>144</display-name>
+  </channel>
+  <channel id="0145.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>145</display-name>
+    <display-name>145</display-name>
+  </channel>
+  <channel id="0146.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>146</display-name>
+    <display-name>146</display-name>
+  </channel>
+  <channel id="0147.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>147</display-name>
+    <display-name>147</display-name>
+  </channel>
+  <channel id="0148.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>148</display-name>
+    <display-name>148</display-name>
+  </channel>
+  <channel id="0149.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>149</display-name>
+    <display-name>149</display-name>
+  </channel>
+  <channel id="0150.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>150</display-name>
+    <display-name>150</display-name>
+  </channel>
+  <channel id="0151.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>151</display-name>
+    <display-name>151</display-name>
+  </channel>
+  <channel id="0152.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>152</display-name>
+    <display-name>152</display-name>
+  </channel>
+  <channel id="0153.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>153</display-name>
+    <display-name>153</display-name>
+  </channel>
+  <channel id="0154.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>154</display-name>
+    <display-name>154</display-name>
+  </channel>
+  <channel id="0155.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>155</display-name>
+    <display-name>155</display-name>
+  </channel>
+  <channel id="0156.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>156</display-name>
+    <display-name>156</display-name>
+  </channel>
+  <channel id="0157.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>157</display-name>
+    <display-name>157</display-name>
+  </channel>
+  <channel id="0158.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>158</display-name>
+    <display-name>158</display-name>
+  </channel>
+  <channel id="0159.directv.com">
+    <display-name>CINEHD</display-name>
+    <display-name>159</display-name>
+    <display-name>159</display-name>
+  </channel>
+  <channel id="0160.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>160</display-name>
+    <display-name>160</display-name>
+  </channel>
+  <channel id="0161.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>161</display-name>
+    <display-name>161</display-name>
+  </channel>
+  <channel id="0162.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>162</display-name>
+    <display-name>162</display-name>
+  </channel>
+  <channel id="0163.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>163</display-name>
+    <display-name>163</display-name>
+  </channel>
+  <channel id="0164.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>164</display-name>
+    <display-name>164</display-name>
+  </channel>
+  <channel id="0166.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>166</display-name>
+    <display-name>166</display-name>
+  </channel>
+  <channel id="0167.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>167</display-name>
+    <display-name>167</display-name>
+  </channel>
+  <channel id="0168.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>168</display-name>
+    <display-name>168</display-name>
+  </channel>
+  <channel id="0169.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>169</display-name>
+    <display-name>169</display-name>
+  </channel>
+  <channel id="0170.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>170</display-name>
+    <display-name>170</display-name>
+  </channel>
+  <channel id="0171.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>171</display-name>
+    <display-name>171</display-name>
+  </channel>
+  <channel id="0172.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>172</display-name>
+    <display-name>172</display-name>
+  </channel>
+  <channel id="0173.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>173</display-name>
+    <display-name>173</display-name>
+  </channel>
+  <channel id="0174.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>174</display-name>
+    <display-name>174</display-name>
+  </channel>
+  <channel id="0176.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>176</display-name>
+    <display-name>176</display-name>
+  </channel>
+  <channel id="0177.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>177</display-name>
+    <display-name>177</display-name>
+  </channel>
+  <channel id="0178.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>178</display-name>
+    <display-name>178</display-name>
+  </channel>
+  <channel id="0179.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>179</display-name>
+    <display-name>179</display-name>
+  </channel>
+  <channel id="0180.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>180</display-name>
+    <display-name>180</display-name>
+  </channel>
+  <channel id="0181.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>181</display-name>
+    <display-name>181</display-name>
+  </channel>
+  <channel id="0182.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>182</display-name>
+    <display-name>182</display-name>
+  </channel>
+  <channel id="0183.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>183</display-name>
+    <display-name>183</display-name>
+  </channel>
+  <channel id="0184.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>184</display-name>
+    <display-name>184</display-name>
+  </channel>
+  <channel id="0185.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>185</display-name>
+    <display-name>185</display-name>
+  </channel>
+  <channel id="0186.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>186</display-name>
+    <display-name>186</display-name>
+  </channel>
+  <channel id="0187.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>187</display-name>
+    <display-name>187</display-name>
+  </channel>
+  <channel id="0188.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>188</display-name>
+    <display-name>188</display-name>
+  </channel>
+  <channel id="0189.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>189</display-name>
+    <display-name>189</display-name>
+  </channel>
+  <channel id="0190.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>190</display-name>
+    <display-name>190</display-name>
+  </channel>
+  <channel id="0191.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>191</display-name>
+    <display-name>191</display-name>
+  </channel>
+  <channel id="0192.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>192</display-name>
+    <display-name>192</display-name>
+  </channel>
+  <channel id="0194.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>194</display-name>
+    <display-name>194</display-name>
+  </channel>
+  <channel id="0195.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>195</display-name>
+    <display-name>195</display-name>
+  </channel>
+  <channel id="0196.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>196</display-name>
+    <display-name>196</display-name>
+  </channel>
+  <channel id="0197.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>197</display-name>
+    <display-name>197</display-name>
+  </channel>
+  <channel id="0198.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>198</display-name>
+    <display-name>198</display-name>
+  </channel>
+  <channel id="0199.directv.com">
+    <display-name>CINE</display-name>
+    <display-name>199</display-name>
+    <display-name>199</display-name>
+  </channel>
+  <channel id="0200.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>200</display-name>
+    <display-name>200</display-name>
+  </channel>
+  <channel id="0201.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>201</display-name>
+    <display-name>201</display-name>
+  </channel>
+  <channel id="0202.directv.com">
+    <display-name>CNN</display-name>
+    <display-name>202</display-name>
+    <display-name>202</display-name>
+  </channel>
+  <channel id="0203.directv.com">
+    <display-name>HOME</display-name>
+    <display-name>203</display-name>
+    <display-name>203</display-name>
+  </channel>
+  <channel id="0204.directv.com">
+    <display-name>HLN</display-name>
+    <display-name>204</display-name>
+    <display-name>204</display-name>
+  </channel>
+  <channel id="0205.directv.com">
+    <display-name>SMX</display-name>
+    <display-name>205</display-name>
+    <display-name>205</display-name>
+  </channel>
+  <channel id="0206.directv.com">
+    <display-name>ESPNHD</display-name>
+    <display-name>206</display-name>
+    <display-name>206</display-name>
+  </channel>
+  <channel id="0207.directv.com">
+    <display-name>ESN</display-name>
+    <display-name>207</display-name>
+    <display-name>207</display-name>
+  </channel>
+  <channel id="0208.directv.com">
+    <display-name>ECL</display-name>
+    <display-name>208</display-name>
+    <display-name>208</display-name>
+  </channel>
+  <channel id="0209.directv.com">
+    <display-name>ESN2HD</display-name>
+    <display-name>209</display-name>
+    <display-name>209</display-name>
+  </channel>
+  <channel id="0210.directv.com">
+    <display-name>ESNa</display-name>
+    <display-name>210</display-name>
+    <display-name>210</display-name>
+  </channel>
+  <channel id="0211.directv.com">
+    <display-name>ESNa</display-name>
+    <display-name>211</display-name>
+    <display-name>211</display-name>
+  </channel>
+  <channel id="0212.directv.com">
+    <display-name>NFLHD</display-name>
+    <display-name>212</display-name>
+    <display-name>212</display-name>
+  </channel>
+  <channel id="0213.directv.com">
+    <display-name>MLBN</display-name>
+    <display-name>213</display-name>
+    <display-name>213</display-name>
+  </channel>
+  <channel id="0215.directv.com">
+    <display-name>NHLN</display-name>
+    <display-name>215</display-name>
+    <display-name>215</display-name>
+  </channel>
+  <channel id="0216.directv.com">
+    <display-name>NBAHD</display-name>
+    <display-name>216</display-name>
+    <display-name>216</display-name>
+  </channel>
+  <channel id="0217.directv.com">
+    <display-name>TNNS</display-name>
+    <display-name>217</display-name>
+    <display-name>217</display-name>
+  </channel>
+  <channel id="0218.directv.com">
+    <display-name>GOLF</display-name>
+    <display-name>218</display-name>
+    <display-name>218</display-name>
+  </channel>
+  <channel id="0219.directv.com">
+    <display-name>DEAL</display-name>
+    <display-name>219</display-name>
+    <display-name>219</display-name>
+  </channel>
+  <channel id="0220.directv.com">
+    <display-name>NUTV</display-name>
+    <display-name>220</display-name>
+    <display-name>220</display-name>
+  </channel>
+  <channel id="0221.directv.com">
+    <display-name>CALL</display-name>
+    <display-name>221</display-name>
+    <display-name>221</display-name>
+  </channel>
+  <channel id="0222.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>222</display-name>
+    <display-name>222</display-name>
+  </channel>
+  <channel id="0223.directv.com">
+    <display-name>CSHP</display-name>
+    <display-name>223</display-name>
+    <display-name>223</display-name>
+  </channel>
+  <channel id="0224.directv.com">
+    <display-name>DSN</display-name>
+    <display-name>224</display-name>
+    <display-name>224</display-name>
+  </channel>
+  <channel id="0226.directv.com">
+    <display-name>LC</display-name>
+    <display-name>226</display-name>
+    <display-name>226</display-name>
+  </channel>
+  <channel id="0227.directv.com">
+    <display-name>INFO</display-name>
+    <display-name>227</display-name>
+    <display-name>227</display-name>
+  </channel>
+  <channel id="0228.directv.com">
+    <display-name>GEM</display-name>
+    <display-name>228</display-name>
+    <display-name>228</display-name>
+  </channel>
+  <channel id="0229.directv.com">
+    <display-name>HGTV</display-name>
+    <display-name>229</display-name>
+    <display-name>229</display-name>
+  </channel>
+  <channel id="0230.directv.com">
+    <display-name>DIY</display-name>
+    <display-name>230</display-name>
+    <display-name>230</display-name>
+  </channel>
+  <channel id="0231.directv.com">
+    <display-name>FOOD</display-name>
+    <display-name>231</display-name>
+    <display-name>231</display-name>
+  </channel>
+  <channel id="0233.directv.com">
+    <display-name>GEMS</display-name>
+    <display-name>233</display-name>
+    <display-name>233</display-name>
+  </channel>
+  <channel id="0235.directv.com">
+    <display-name>STYL</display-name>
+    <display-name>235</display-name>
+    <display-name>235</display-name>
+  </channel>
+  <channel id="0236.directv.com">
+    <display-name>E!</display-name>
+    <display-name>236</display-name>
+    <display-name>236</display-name>
+  </channel>
+  <channel id="0237.directv.com">
+    <display-name>TVGN</display-name>
+    <display-name>237</display-name>
+    <display-name>237</display-name>
+  </channel>
+  <channel id="0238.directv.com">
+    <display-name>REEL</display-name>
+    <display-name>238</display-name>
+    <display-name>238</display-name>
+  </channel>
+  <channel id="0239.directv.com">
+    <display-name>T101</display-name>
+    <display-name>239</display-name>
+    <display-name>239</display-name>
+  </channel>
+  <channel id="0240.directv.com">
+    <display-name>HSN</display-name>
+    <display-name>240</display-name>
+    <display-name>240</display-name>
+  </channel>
+  <channel id="0241.directv.com">
+    <display-name>SPKE</display-name>
+    <display-name>241</display-name>
+    <display-name>241</display-name>
+  </channel>
+  <channel id="0242.directv.com">
+    <display-name>USA</display-name>
+    <display-name>242</display-name>
+    <display-name>242</display-name>
+  </channel>
+  <channel id="0243.directv.com">
+    <display-name>CRTV</display-name>
+    <display-name>243</display-name>
+    <display-name>243</display-name>
+  </channel>
+  <channel id="0244.directv.com">
+    <display-name>Syfy</display-name>
+    <display-name>244</display-name>
+    <display-name>244</display-name>
+  </channel>
+  <channel id="0245.directv.com">
+    <display-name>TNT</display-name>
+    <display-name>245</display-name>
+    <display-name>245</display-name>
+  </channel>
+  <channel id="0246.directv.com">
+    <display-name>tru</display-name>
+    <display-name>246</display-name>
+    <display-name>246</display-name>
+  </channel>
+  <channel id="0247.directv.com">
+    <display-name>TBSHD</display-name>
+    <display-name>247</display-name>
+    <display-name>247</display-name>
+  </channel>
+  <channel id="0248.directv.com">
+    <display-name>FX</display-name>
+    <display-name>248</display-name>
+    <display-name>248</display-name>
+  </channel>
+  <channel id="0249.directv.com">
+    <display-name>COM</display-name>
+    <display-name>249</display-name>
+    <display-name>249</display-name>
+  </channel>
+  <channel id="0250.directv.com">
+    <display-name>REAL</display-name>
+    <display-name>250</display-name>
+    <display-name>250</display-name>
+  </channel>
+  <channel id="0251.directv.com">
+    <display-name>OXGN</display-name>
+    <display-name>251</display-name>
+    <display-name>251</display-name>
+  </channel>
+  <channel id="0252.directv.com">
+    <display-name>LIFE</display-name>
+    <display-name>252</display-name>
+    <display-name>252</display-name>
+  </channel>
+  <channel id="0253.directv.com">
+    <display-name>LMN</display-name>
+    <display-name>253</display-name>
+    <display-name>253</display-name>
+  </channel>
+  <channel id="0254.directv.com">
+    <display-name>AMC</display-name>
+    <display-name>254</display-name>
+    <display-name>254</display-name>
+  </channel>
+  <channel id="0255.directv.com">
+    <display-name>MGMHD</display-name>
+    <display-name>255</display-name>
+    <display-name>255</display-name>
+  </channel>
+  <channel id="0256.directv.com">
+    <display-name>TCM</display-name>
+    <display-name>256</display-name>
+    <display-name>256</display-name>
+  </channel>
+  <channel id="0257.directv.com">
+    <display-name>CHLL</display-name>
+    <display-name>257</display-name>
+    <display-name>257</display-name>
+  </channel>
+  <channel id="0258.directv.com">
+    <display-name>FMC</display-name>
+    <display-name>258</display-name>
+    <display-name>258</display-name>
+  </channel>
+  <channel id="0259.directv.com">
+    <display-name>UHD</display-name>
+    <display-name>259</display-name>
+    <display-name>259</display-name>
+  </channel>
+  <channel id="0260.directv.com">
+    <display-name>WE</display-name>
+    <display-name>260</display-name>
+    <display-name>260</display-name>
+  </channel>
+  <channel id="0261.directv.com">
+    <display-name>FIT</display-name>
+    <display-name>261</display-name>
+    <display-name>261</display-name>
+  </channel>
+  <channel id="0262.directv.com">
+    <display-name>SOAP</display-name>
+    <display-name>262</display-name>
+    <display-name>262</display-name>
+  </channel>
+  <channel id="0263.directv.com">
+    <display-name>GAME</display-name>
+    <display-name>263</display-name>
+    <display-name>263</display-name>
+  </channel>
+  <channel id="0264.directv.com">
+    <display-name>BBCA</display-name>
+    <display-name>264</display-name>
+    <display-name>264</display-name>
+  </channel>
+  <channel id="0265.directv.com">
+    <display-name>A&amp;E</display-name>
+    <display-name>265</display-name>
+    <display-name>265</display-name>
+  </channel>
+  <channel id="0266.directv.com">
+    <display-name>BIO</display-name>
+    <display-name>266</display-name>
+    <display-name>266</display-name>
+  </channel>
+  <channel id="0267.directv.com">
+    <display-name>SMTHHD</display-name>
+    <display-name>267</display-name>
+    <display-name>267</display-name>
+  </channel>
+  <channel id="0268.directv.com">
+    <display-name>IRTV</display-name>
+    <display-name>268</display-name>
+    <display-name>268</display-name>
+  </channel>
+  <channel id="0269.directv.com">
+    <display-name>HIST</display-name>
+    <display-name>269</display-name>
+    <display-name>269</display-name>
+  </channel>
+  <channel id="0271.directv.com">
+    <display-name>HInt</display-name>
+    <display-name>271</display-name>
+    <display-name>271</display-name>
+  </channel>
+  <channel id="0272.directv.com">
+    <display-name>LOGO</display-name>
+    <display-name>272</display-name>
+    <display-name>272</display-name>
+  </channel>
+  <channel id="0273.directv.com">
+    <display-name>BRVOHD</display-name>
+    <display-name>273</display-name>
+    <display-name>273</display-name>
+  </channel>
+  <channel id="0274.directv.com">
+    <display-name>OVTV</display-name>
+    <display-name>274</display-name>
+    <display-name>274</display-name>
+  </channel>
+  <channel id="0275.directv.com">
+    <display-name>QVC</display-name>
+    <display-name>275</display-name>
+    <display-name>275</display-name>
+  </channel>
+  <channel id="0276.directv.com">
+    <display-name>NGCHD</display-name>
+    <display-name>276</display-name>
+    <display-name>276</display-name>
+  </channel>
+  <channel id="0277.directv.com">
+    <display-name>TRAV</display-name>
+    <display-name>277</display-name>
+    <display-name>277</display-name>
+  </channel>
+  <channel id="0278.directv.com">
+    <display-name>DSCHD</display-name>
+    <display-name>278</display-name>
+    <display-name>278</display-name>
+  </channel>
+  <channel id="0279.directv.com">
+    <display-name>DHC</display-name>
+    <display-name>279</display-name>
+    <display-name>279</display-name>
+  </channel>
+  <channel id="0280.directv.com">
+    <display-name>TLCHD</display-name>
+    <display-name>280</display-name>
+    <display-name>280</display-name>
+  </channel>
+  <channel id="0281.directv.com">
+    <display-name>HDTH</display-name>
+    <display-name>281</display-name>
+    <display-name>281</display-name>
+  </channel>
+  <channel id="0282.directv.com">
+    <display-name>APLHD</display-name>
+    <display-name>282</display-name>
+    <display-name>282</display-name>
+  </channel>
+  <channel id="0285.directv.com">
+    <display-name>ID</display-name>
+    <display-name>285</display-name>
+    <display-name>285</display-name>
+  </channel>
+  <channel id="0286.directv.com">
+    <display-name>PLGNHD</display-name>
+    <display-name>286</display-name>
+    <display-name>286</display-name>
+  </channel>
+  <channel id="0287.directv.com">
+    <display-name>MILT</display-name>
+    <display-name>287</display-name>
+    <display-name>287</display-name>
+  </channel>
+  <channel id="0288.directv.com">
+    <display-name>GAME</display-name>
+    <display-name>288</display-name>
+    <display-name>288</display-name>
+  </channel>
+  <channel id="0289.directv.com">
+    <display-name>CIHD</display-name>
+    <display-name>289</display-name>
+    <display-name>289</display-name>
+  </channel>
+  <channel id="0290.directv.com">
+    <display-name>DISeHD</display-name>
+    <display-name>290</display-name>
+    <display-name>290</display-name>
+  </channel>
+  <channel id="0291.directv.com">
+    <display-name>DISw</display-name>
+    <display-name>291</display-name>
+    <display-name>291</display-name>
+  </channel>
+  <channel id="0292.directv.com">
+    <display-name>DXDHD</display-name>
+    <display-name>292</display-name>
+    <display-name>292</display-name>
+  </channel>
+  <channel id="0293.directv.com">
+    <display-name>BABY</display-name>
+    <display-name>293</display-name>
+    <display-name>293</display-name>
+  </channel>
+  <channel id="0294.directv.com">
+    <display-name>KIDS</display-name>
+    <display-name>294</display-name>
+    <display-name>294</display-name>
+  </channel>
+  <channel id="0295.directv.com">
+    <display-name>SPRT</display-name>
+    <display-name>295</display-name>
+    <display-name>295</display-name>
+  </channel>
+  <channel id="0296.directv.com">
+    <display-name>CNe</display-name>
+    <display-name>296</display-name>
+    <display-name>296</display-name>
+  </channel>
+  <channel id="0297.directv.com">
+    <display-name>CNw</display-name>
+    <display-name>297</display-name>
+    <display-name>297</display-name>
+  </channel>
+  <channel id="0298.directv.com">
+    <display-name>BOOM</display-name>
+    <display-name>298</display-name>
+    <display-name>298</display-name>
+  </channel>
+  <channel id="0299.directv.com">
+    <display-name>NIKe</display-name>
+    <display-name>299</display-name>
+    <display-name>299</display-name>
+  </channel>
+  <channel id="0300.directv.com">
+    <display-name>NIKw</display-name>
+    <display-name>300</display-name>
+    <display-name>300</display-name>
+  </channel>
+  <channel id="0301.directv.com">
+    <display-name>NKJR</display-name>
+    <display-name>301</display-name>
+    <display-name>301</display-name>
+  </channel>
+  <channel id="0302.directv.com">
+    <display-name>NKTN</display-name>
+    <display-name>302</display-name>
+    <display-name>302</display-name>
+  </channel>
+  <channel id="0303.directv.com">
+    <display-name>TNCK</display-name>
+    <display-name>303</display-name>
+    <display-name>303</display-name>
+  </channel>
+  <channel id="0304.directv.com">
+    <display-name>TVLD</display-name>
+    <display-name>304</display-name>
+    <display-name>304</display-name>
+  </channel>
+  <channel id="0305.directv.com">
+    <display-name>ION</display-name>
+    <display-name>305</display-name>
+    <display-name>305</display-name>
+  </channel>
+  <channel id="0306.directv.com">
+    <display-name>HDN</display-name>
+    <display-name>306</display-name>
+    <display-name>306</display-name>
+  </channel>
+  <channel id="0307.directv.com">
+    <display-name>WGN</display-name>
+    <display-name>307</display-name>
+    <display-name>307</display-name>
+  </channel>
+  <channel id="0308.directv.com">
+    <display-name>SLTH</display-name>
+    <display-name>308</display-name>
+    <display-name>308</display-name>
+  </channel>
+  <channel id="0310.directv.com">
+    <display-name>G4</display-name>
+    <display-name>310</display-name>
+    <display-name>310</display-name>
+  </channel>
+  <channel id="0311.directv.com">
+    <display-name>ABCFHD</display-name>
+    <display-name>311</display-name>
+    <display-name>311</display-name>
+  </channel>
+  <channel id="0312.directv.com">
+    <display-name>HALL</display-name>
+    <display-name>312</display-name>
+    <display-name>312</display-name>
+  </channel>
+  <channel id="0313.directv.com">
+    <display-name>JTV</display-name>
+    <display-name>313</display-name>
+    <display-name>313</display-name>
+  </channel>
+  <channel id="0315.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>315</display-name>
+    <display-name>315</display-name>
+  </channel>
+  <channel id="0316.directv.com">
+    <display-name>SNBC</display-name>
+    <display-name>316</display-name>
+    <display-name>316</display-name>
+  </channel>
+  <channel id="0318.directv.com">
+    <display-name>BUY</display-name>
+    <display-name>318</display-name>
+    <display-name>318</display-name>
+  </channel>
+  <channel id="0319.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>319</display-name>
+    <display-name>319</display-name>
+  </channel>
+  <channel id="0320.directv.com">
+    <display-name>VALU</display-name>
+    <display-name>320</display-name>
+    <display-name>320</display-name>
+  </channel>
+  <channel id="0321.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>321</display-name>
+    <display-name>321</display-name>
+  </channel>
+  <channel id="0323.directv.com">
+    <display-name>UPLF</display-name>
+    <display-name>323</display-name>
+    <display-name>323</display-name>
+  </channel>
+  <channel id="0324.directv.com">
+    <display-name>AAN</display-name>
+    <display-name>324</display-name>
+    <display-name>324</display-name>
+  </channel>
+  <channel id="0326.directv.com">
+    <display-name>GAC</display-name>
+    <display-name>326</display-name>
+    <display-name>326</display-name>
+  </channel>
+  <channel id="0327.directv.com">
+    <display-name>CMT</display-name>
+    <display-name>327</display-name>
+    <display-name>327</display-name>
+  </channel>
+  <channel id="0328.directv.com">
+    <display-name>TV1</display-name>
+    <display-name>328</display-name>
+    <display-name>328</display-name>
+  </channel>
+  <channel id="0329.directv.com">
+    <display-name>BETHD</display-name>
+    <display-name>329</display-name>
+    <display-name>329</display-name>
+  </channel>
+  <channel id="0331.directv.com">
+    <display-name>MTVHD</display-name>
+    <display-name>331</display-name>
+    <display-name>331</display-name>
+  </channel>
+  <channel id="0332.directv.com">
+    <display-name>PLDAHD</display-name>
+    <display-name>332</display-name>
+    <display-name>332</display-name>
+  </channel>
+  <channel id="0333.directv.com">
+    <display-name>MTV2</display-name>
+    <display-name>333</display-name>
+    <display-name>333</display-name>
+  </channel>
+  <channel id="0335.directv.com">
+    <display-name>VH1</display-name>
+    <display-name>335</display-name>
+    <display-name>335</display-name>
+  </channel>
+  <channel id="0337.directv.com">
+    <display-name>VH1C</display-name>
+    <display-name>337</display-name>
+    <display-name>337</display-name>
+  </channel>
+  <channel id="0338.directv.com">
+    <display-name>GMC</display-name>
+    <display-name>338</display-name>
+    <display-name>338</display-name>
+  </channel>
+  <channel id="0339.directv.com">
+    <display-name>Fuse</display-name>
+    <display-name>339</display-name>
+    <display-name>339</display-name>
+  </channel>
+  <channel id="0340.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>340</display-name>
+    <display-name>340</display-name>
+  </channel>
+  <channel id="0344.directv.com">
+    <display-name>P1TV</display-name>
+    <display-name>344</display-name>
+    <display-name>344</display-name>
+  </channel>
+  <channel id="0345.directv.com">
+    <display-name>RFD</display-name>
+    <display-name>345</display-name>
+    <display-name>345</display-name>
+  </channel>
+  <channel id="0346.directv.com">
+    <display-name>SHOP</display-name>
+    <display-name>346</display-name>
+    <display-name>346</display-name>
+  </channel>
+  <channel id="0347.directv.com">
+    <display-name>IONw</display-name>
+    <display-name>347</display-name>
+    <display-name>347</display-name>
+  </channel>
+  <channel id="0350.directv.com">
+    <display-name>CSP1</display-name>
+    <display-name>350</display-name>
+    <display-name>350</display-name>
+  </channel>
+  <channel id="0351.directv.com">
+    <display-name>CSP2</display-name>
+    <display-name>351</display-name>
+    <display-name>351</display-name>
+  </channel>
+  <channel id="0352.directv.com">
+    <display-name>NMX</display-name>
+    <display-name>352</display-name>
+    <display-name>352</display-name>
+  </channel>
+  <channel id="0353.directv.com">
+    <display-name>BTV</display-name>
+    <display-name>353</display-name>
+    <display-name>353</display-name>
+  </channel>
+  <channel id="0354.directv.com">
+    <display-name>R&amp;R</display-name>
+    <display-name>354</display-name>
+    <display-name>354</display-name>
+  </channel>
+  <channel id="0355.directv.com">
+    <display-name>CNBC</display-name>
+    <display-name>355</display-name>
+    <display-name>355</display-name>
+  </channel>
+  <channel id="0357.directv.com">
+    <display-name>CNBW</display-name>
+    <display-name>357</display-name>
+    <display-name>357</display-name>
+  </channel>
+  <channel id="0358.directv.com">
+    <display-name>CRNT</display-name>
+    <display-name>358</display-name>
+    <display-name>358</display-name>
+  </channel>
+  <channel id="0359.directv.com">
+    <display-name>FBNHD</display-name>
+    <display-name>359</display-name>
+    <display-name>359</display-name>
+  </channel>
+  <channel id="0360.directv.com">
+    <display-name>FNCHD</display-name>
+    <display-name>360</display-name>
+    <display-name>360</display-name>
+  </channel>
+  <channel id="0361.directv.com">
+    <display-name>NUTV</display-name>
+    <display-name>361</display-name>
+    <display-name>361</display-name>
+  </channel>
+  <channel id="0362.directv.com">
+    <display-name>TWCHD</display-name>
+    <display-name>362</display-name>
+    <display-name>362</display-name>
+  </channel>
+  <channel id="0364.directv.com">
+    <display-name>INSP</display-name>
+    <display-name>364</display-name>
+    <display-name>364</display-name>
+  </channel>
+  <channel id="0365.directv.com">
+    <display-name>GTV</display-name>
+    <display-name>365</display-name>
+    <display-name>365</display-name>
+  </channel>
+  <channel id="0366.directv.com">
+    <display-name>JLTV</display-name>
+    <display-name>366</display-name>
+    <display-name>366</display-name>
+  </channel>
+  <channel id="0367.directv.com">
+    <display-name>WHT</display-name>
+    <display-name>367</display-name>
+    <display-name>367</display-name>
+  </channel>
+  <channel id="0368.directv.com">
+    <display-name>HOPE</display-name>
+    <display-name>368</display-name>
+    <display-name>368</display-name>
+  </channel>
+  <channel id="0369.directv.com">
+    <display-name>DSTR</display-name>
+    <display-name>369</display-name>
+    <display-name>369</display-name>
+  </channel>
+  <channel id="0370.directv.com">
+    <display-name>EWTN</display-name>
+    <display-name>370</display-name>
+    <display-name>370</display-name>
+  </channel>
+  <channel id="0371.directv.com">
+    <display-name>TCC</display-name>
+    <display-name>371</display-name>
+    <display-name>371</display-name>
+  </channel>
+  <channel id="0372.directv.com">
+    <display-name>TBN</display-name>
+    <display-name>372</display-name>
+    <display-name>372</display-name>
+  </channel>
+  <channel id="0373.directv.com">
+    <display-name>WORD</display-name>
+    <display-name>373</display-name>
+    <display-name>373</display-name>
+  </channel>
+  <channel id="0374.directv.com">
+    <display-name>BYU</display-name>
+    <display-name>374</display-name>
+    <display-name>374</display-name>
+  </channel>
+  <channel id="0375.directv.com">
+    <display-name>LINK</display-name>
+    <display-name>375</display-name>
+    <display-name>375</display-name>
+  </channel>
+  <channel id="0376.directv.com">
+    <display-name>CTN</display-name>
+    <display-name>376</display-name>
+    <display-name>376</display-name>
+  </channel>
+  <channel id="0378.directv.com">
+    <display-name>NRB</display-name>
+    <display-name>378</display-name>
+    <display-name>378</display-name>
+  </channel>
+  <channel id="0379.directv.com">
+    <display-name>PBS</display-name>
+    <display-name>379</display-name>
+    <display-name>379</display-name>
+  </channel>
+  <channel id="0380.directv.com">
+    <display-name>CBSe</display-name>
+    <display-name>380</display-name>
+    <display-name>380</display-name>
+  </channel>
+  <channel id="0381.directv.com">
+    <display-name>CBSw</display-name>
+    <display-name>381</display-name>
+    <display-name>381</display-name>
+  </channel>
+  <channel id="0382.directv.com">
+    <display-name>NBCe</display-name>
+    <display-name>382</display-name>
+    <display-name>382</display-name>
+  </channel>
+  <channel id="0383.directv.com">
+    <display-name>NBCw</display-name>
+    <display-name>383</display-name>
+    <display-name>383</display-name>
+  </channel>
+  <channel id="0384.directv.com">
+    <display-name>CWe</display-name>
+    <display-name>384</display-name>
+    <display-name>384</display-name>
+  </channel>
+  <channel id="0385.directv.com">
+    <display-name>CWw</display-name>
+    <display-name>385</display-name>
+    <display-name>385</display-name>
+  </channel>
+  <channel id="0386.directv.com">
+    <display-name>ABCe</display-name>
+    <display-name>386</display-name>
+    <display-name>386</display-name>
+  </channel>
+  <channel id="0387.directv.com">
+    <display-name>ABCw</display-name>
+    <display-name>387</display-name>
+    <display-name>387</display-name>
+  </channel>
+  <channel id="0388.directv.com">
+    <display-name>FOXe</display-name>
+    <display-name>388</display-name>
+    <display-name>388</display-name>
+  </channel>
+  <channel id="0389.directv.com">
+    <display-name>FOXw</display-name>
+    <display-name>389</display-name>
+    <display-name>389</display-name>
+  </channel>
+  <channel id="0390.directv.com">
+    <display-name>CBSeHD</display-name>
+    <display-name>390</display-name>
+    <display-name>390</display-name>
+  </channel>
+  <channel id="0391.directv.com">
+    <display-name>CBSwHD</display-name>
+    <display-name>391</display-name>
+    <display-name>391</display-name>
+  </channel>
+  <channel id="0392.directv.com">
+    <display-name>NBCeHD</display-name>
+    <display-name>392</display-name>
+    <display-name>392</display-name>
+  </channel>
+  <channel id="0393.directv.com">
+    <display-name>NBCwHD</display-name>
+    <display-name>393</display-name>
+    <display-name>393</display-name>
+  </channel>
+  <channel id="0396.directv.com">
+    <display-name>ABCeHD</display-name>
+    <display-name>396</display-name>
+    <display-name>396</display-name>
+  </channel>
+  <channel id="0397.directv.com">
+    <display-name>ABCwHD</display-name>
+    <display-name>397</display-name>
+    <display-name>397</display-name>
+  </channel>
+  <channel id="0398.directv.com">
+    <display-name>FOXeHD</display-name>
+    <display-name>398</display-name>
+    <display-name>398</display-name>
+  </channel>
+  <channel id="0399.directv.com">
+    <display-name>FOXwHD</display-name>
+    <display-name>399</display-name>
+    <display-name>399</display-name>
+  </channel>
+  <channel id="0401.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>401</display-name>
+    <display-name>401</display-name>
+  </channel>
+  <channel id="0402.directv.com">
+    <display-name>UNIe</display-name>
+    <display-name>402</display-name>
+    <display-name>402</display-name>
+  </channel>
+  <channel id="0403.directv.com">
+    <display-name>UNIw</display-name>
+    <display-name>403</display-name>
+    <display-name>403</display-name>
+  </channel>
+  <channel id="0404.directv.com">
+    <display-name>GALA</display-name>
+    <display-name>404</display-name>
+    <display-name>404</display-name>
+  </channel>
+  <channel id="0405.directv.com">
+    <display-name>MEGA</display-name>
+    <display-name>405</display-name>
+    <display-name>405</display-name>
+  </channel>
+  <channel id="0406.directv.com">
+    <display-name>TELe</display-name>
+    <display-name>406</display-name>
+    <display-name>406</display-name>
+  </channel>
+  <channel id="0407.directv.com">
+    <display-name>TELw</display-name>
+    <display-name>407</display-name>
+    <display-name>407</display-name>
+  </channel>
+  <channel id="0408.directv.com">
+    <display-name>TFT</display-name>
+    <display-name>408</display-name>
+    <display-name>408</display-name>
+  </channel>
+  <channel id="0409.directv.com">
+    <display-name>TVZL</display-name>
+    <display-name>409</display-name>
+    <display-name>409</display-name>
+  </channel>
+  <channel id="0410.directv.com">
+    <display-name>MUN2</display-name>
+    <display-name>410</display-name>
+    <display-name>410</display-name>
+  </channel>
+  <channel id="0411.directv.com">
+    <display-name>TLFI</display-name>
+    <display-name>411</display-name>
+    <display-name>411</display-name>
+  </channel>
+  <channel id="0412.directv.com">
+    <display-name>MEXI</display-name>
+    <display-name>412</display-name>
+    <display-name>412</display-name>
+  </channel>
+  <channel id="0413.directv.com">
+    <display-name>DSCE</display-name>
+    <display-name>413</display-name>
+    <display-name>413</display-name>
+  </channel>
+  <channel id="0414.directv.com">
+    <display-name>WAPA</display-name>
+    <display-name>414</display-name>
+    <display-name>414</display-name>
+  </channel>
+  <channel id="0415.directv.com">
+    <display-name>ATM</display-name>
+    <display-name>415</display-name>
+    <display-name>415</display-name>
+  </channel>
+  <channel id="0416.directv.com">
+    <display-name>MTV3</display-name>
+    <display-name>416</display-name>
+    <display-name>416</display-name>
+  </channel>
+  <channel id="0417.directv.com">
+    <display-name>CARA</display-name>
+    <display-name>417</display-name>
+    <display-name>417</display-name>
+  </channel>
+  <channel id="0418.directv.com">
+    <display-name>NTN</display-name>
+    <display-name>418</display-name>
+    <display-name>418</display-name>
+  </channel>
+  <channel id="0419.directv.com">
+    <display-name>CNNE</display-name>
+    <display-name>419</display-name>
+    <display-name>419</display-name>
+  </channel>
+  <channel id="0420.directv.com">
+    <display-name>MXTV</display-name>
+    <display-name>420</display-name>
+    <display-name>420</display-name>
+  </channel>
+  <channel id="0422.directv.com">
+    <display-name>CIES</display-name>
+    <display-name>422</display-name>
+    <display-name>422</display-name>
+  </channel>
+  <channel id="0423.directv.com">
+    <display-name>CILA</display-name>
+    <display-name>423</display-name>
+    <display-name>423</display-name>
+  </channel>
+  <channel id="0424.directv.com">
+    <display-name>CINO</display-name>
+    <display-name>424</display-name>
+    <display-name>424</display-name>
+  </channel>
+  <channel id="0425.directv.com">
+    <display-name>FSE</display-name>
+    <display-name>425</display-name>
+    <display-name>425</display-name>
+  </channel>
+  <channel id="0426.directv.com">
+    <display-name>GOL</display-name>
+    <display-name>426</display-name>
+    <display-name>426</display-name>
+  </channel>
+  <channel id="0427.directv.com">
+    <display-name>TYC</display-name>
+    <display-name>427</display-name>
+    <display-name>427</display-name>
+  </channel>
+  <channel id="0428.directv.com">
+    <display-name>CATV</display-name>
+    <display-name>428</display-name>
+    <display-name>428</display-name>
+  </channel>
+  <channel id="0429.directv.com">
+    <display-name>TLCN</display-name>
+    <display-name>429</display-name>
+    <display-name>429</display-name>
+  </channel>
+  <channel id="0430.directv.com">
+    <display-name>LTV</display-name>
+    <display-name>430</display-name>
+    <display-name>430</display-name>
+  </channel>
+  <channel id="0431.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>431</display-name>
+    <display-name>431</display-name>
+  </channel>
+  <channel id="0432.directv.com">
+    <display-name>ESPD</display-name>
+    <display-name>432</display-name>
+    <display-name>432</display-name>
+  </channel>
+  <channel id="0433.directv.com">
+    <display-name>FSTV</display-name>
+    <display-name>433</display-name>
+    <display-name>433</display-name>
+  </channel>
+  <channel id="0434.directv.com">
+    <display-name>DOMN</display-name>
+    <display-name>434</display-name>
+    <display-name>434</display-name>
+  </channel>
+  <channel id="0436.directv.com">
+    <display-name>DFAM</display-name>
+    <display-name>436</display-name>
+    <display-name>436</display-name>
+  </channel>
+  <channel id="0437.directv.com">
+    <display-name>TVCH</display-name>
+    <display-name>437</display-name>
+    <display-name>437</display-name>
+  </channel>
+  <channel id="0438.directv.com">
+    <display-name>ECUA</display-name>
+    <display-name>438</display-name>
+    <display-name>438</display-name>
+  </channel>
+  <channel id="0439.directv.com">
+    <display-name>PERU</display-name>
+    <display-name>439</display-name>
+    <display-name>439</display-name>
+  </channel>
+  <channel id="0440.directv.com">
+    <display-name>VME</display-name>
+    <display-name>440</display-name>
+    <display-name>440</display-name>
+  </channel>
+  <channel id="0441.directv.com">
+    <display-name>AZA</display-name>
+    <display-name>441</display-name>
+    <display-name>441</display-name>
+  </channel>
+  <channel id="0442.directv.com">
+    <display-name>AZM</display-name>
+    <display-name>442</display-name>
+    <display-name>442</display-name>
+  </channel>
+  <channel id="0443.directv.com">
+    <display-name>HISE</display-name>
+    <display-name>443</display-name>
+    <display-name>443</display-name>
+  </channel>
+  <channel id="0446.directv.com">
+    <display-name>MEX</display-name>
+    <display-name>446</display-name>
+    <display-name>446</display-name>
+  </channel>
+  <channel id="0447.directv.com">
+    <display-name>ONCE</display-name>
+    <display-name>447</display-name>
+    <display-name>447</display-name>
+  </channel>
+  <channel id="0449.directv.com">
+    <display-name>HITN</display-name>
+    <display-name>449</display-name>
+    <display-name>449</display-name>
+  </channel>
+  <channel id="0450.directv.com">
+    <display-name>TVB1</display-name>
+    <display-name>450</display-name>
+    <display-name>450</display-name>
+  </channel>
+  <channel id="0451.directv.com">
+    <display-name>TVB2</display-name>
+    <display-name>451</display-name>
+    <display-name>451</display-name>
+  </channel>
+  <channel id="0452.directv.com">
+    <display-name>TVBS</display-name>
+    <display-name>452</display-name>
+    <display-name>452</display-name>
+  </channel>
+  <channel id="0453.directv.com">
+    <display-name>TVBE</display-name>
+    <display-name>453</display-name>
+    <display-name>453</display-name>
+  </channel>
+  <channel id="0454.directv.com">
+    <display-name>CTV4</display-name>
+    <display-name>454</display-name>
+    <display-name>454</display-name>
+  </channel>
+  <channel id="0455.directv.com">
+    <display-name>TSCV</display-name>
+    <display-name>455</display-name>
+    <display-name>455</display-name>
+  </channel>
+  <channel id="0456.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>456</display-name>
+    <display-name>456</display-name>
+  </channel>
+  <channel id="0457.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>457</display-name>
+    <display-name>457</display-name>
+  </channel>
+  <channel id="0458.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>458</display-name>
+    <display-name>458</display-name>
+  </channel>
+  <channel id="0460.directv.com">
+    <display-name>TVE</display-name>
+    <display-name>460</display-name>
+    <display-name>460</display-name>
+  </channel>
+  <channel id="0461.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>461</display-name>
+    <display-name>461</display-name>
+  </channel>
+  <channel id="0462.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>462</display-name>
+    <display-name>462</display-name>
+  </channel>
+  <channel id="0463.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>463</display-name>
+    <display-name>463</display-name>
+  </channel>
+  <channel id="0464.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>464</display-name>
+    <display-name>464</display-name>
+  </channel>
+  <channel id="0465.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>465</display-name>
+    <display-name>465</display-name>
+  </channel>
+  <channel id="0466.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>466</display-name>
+    <display-name>466</display-name>
+  </channel>
+  <channel id="0467.directv.com">
+    <display-name>UEFA</display-name>
+    <display-name>467</display-name>
+    <display-name>467</display-name>
+  </channel>
+  <channel id="0478.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>478</display-name>
+    <display-name>478</display-name>
+  </channel>
+  <channel id="0479.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>479</display-name>
+    <display-name>479</display-name>
+  </channel>
+  <channel id="0480.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>480</display-name>
+    <display-name>480</display-name>
+  </channel>
+  <channel id="0481.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>481</display-name>
+    <display-name>481</display-name>
+  </channel>
+  <channel id="0482.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>482</display-name>
+    <display-name>482</display-name>
+  </channel>
+  <channel id="0483.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>483</display-name>
+    <display-name>483</display-name>
+  </channel>
+  <channel id="0488.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>488</display-name>
+    <display-name>488</display-name>
+  </channel>
+  <channel id="0490.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>490</display-name>
+    <display-name>490</display-name>
+  </channel>
+  <channel id="0491.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>491</display-name>
+    <display-name>491</display-name>
+  </channel>
+  <channel id="0492.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>492</display-name>
+    <display-name>492</display-name>
+  </channel>
+  <channel id="0493.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>493</display-name>
+    <display-name>493</display-name>
+  </channel>
+  <channel id="0494.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>494</display-name>
+    <display-name>494</display-name>
+  </channel>
+  <channel id="0496.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>496</display-name>
+    <display-name>496</display-name>
+  </channel>
+  <channel id="0497.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>497</display-name>
+    <display-name>497</display-name>
+  </channel>
+  <channel id="0501.directv.com">
+    <display-name>HBOe</display-name>
+    <display-name>501</display-name>
+    <display-name>501</display-name>
+  </channel>
+  <channel id="0502.directv.com">
+    <display-name>HB2e</display-name>
+    <display-name>502</display-name>
+    <display-name>502</display-name>
+  </channel>
+  <channel id="0503.directv.com">
+    <display-name>HBOS</display-name>
+    <display-name>503</display-name>
+    <display-name>503</display-name>
+  </channel>
+  <channel id="0504.directv.com">
+    <display-name>HBOw</display-name>
+    <display-name>504</display-name>
+    <display-name>504</display-name>
+  </channel>
+  <channel id="0505.directv.com">
+    <display-name>HB2w</display-name>
+    <display-name>505</display-name>
+    <display-name>505</display-name>
+  </channel>
+  <channel id="0507.directv.com">
+    <display-name>HBFe</display-name>
+    <display-name>507</display-name>
+    <display-name>507</display-name>
+  </channel>
+  <channel id="0508.directv.com">
+    <display-name>HBFw</display-name>
+    <display-name>508</display-name>
+    <display-name>508</display-name>
+  </channel>
+  <channel id="0511.directv.com">
+    <display-name>HBOL</display-name>
+    <display-name>511</display-name>
+    <display-name>511</display-name>
+  </channel>
+  <channel id="0512.directv.com">
+    <display-name>MAXeHD</display-name>
+    <display-name>512</display-name>
+    <display-name>512</display-name>
+  </channel>
+  <channel id="0513.directv.com">
+    <display-name>MMAX</display-name>
+    <display-name>513</display-name>
+    <display-name>513</display-name>
+  </channel>
+  <channel id="0514.directv.com">
+    <display-name>MAXwHD</display-name>
+    <display-name>514</display-name>
+    <display-name>514</display-name>
+  </channel>
+  <channel id="0518.directv.com">
+    <display-name>STZKHD</display-name>
+    <display-name>518</display-name>
+    <display-name>518</display-name>
+  </channel>
+  <channel id="0519.directv.com">
+    <display-name>STZCHD</display-name>
+    <display-name>519</display-name>
+    <display-name>519</display-name>
+  </channel>
+  <channel id="0520.directv.com">
+    <display-name>STZe</display-name>
+    <display-name>520</display-name>
+    <display-name>520</display-name>
+  </channel>
+  <channel id="0521.directv.com">
+    <display-name>STZw</display-name>
+    <display-name>521</display-name>
+    <display-name>521</display-name>
+  </channel>
+  <channel id="0522.directv.com">
+    <display-name>SEDG</display-name>
+    <display-name>522</display-name>
+    <display-name>522</display-name>
+  </channel>
+  <channel id="0523.directv.com">
+    <display-name>SBLK</display-name>
+    <display-name>523</display-name>
+    <display-name>523</display-name>
+  </channel>
+  <channel id="0526.directv.com">
+    <display-name>ENCe</display-name>
+    <display-name>526</display-name>
+    <display-name>526</display-name>
+  </channel>
+  <channel id="0527.directv.com">
+    <display-name>ENCw</display-name>
+    <display-name>527</display-name>
+    <display-name>527</display-name>
+  </channel>
+  <channel id="0528.directv.com">
+    <display-name>ELOV</display-name>
+    <display-name>528</display-name>
+    <display-name>528</display-name>
+  </channel>
+  <channel id="0529.directv.com">
+    <display-name>EWST</display-name>
+    <display-name>529</display-name>
+    <display-name>529</display-name>
+  </channel>
+  <channel id="0530.directv.com">
+    <display-name>EMYS</display-name>
+    <display-name>530</display-name>
+    <display-name>530</display-name>
+  </channel>
+  <channel id="0531.directv.com">
+    <display-name>EDRA</display-name>
+    <display-name>531</display-name>
+    <display-name>531</display-name>
+  </channel>
+  <channel id="0532.directv.com">
+    <display-name>EACT</display-name>
+    <display-name>532</display-name>
+    <display-name>532</display-name>
+  </channel>
+  <channel id="0533.directv.com">
+    <display-name>EWAM</display-name>
+    <display-name>533</display-name>
+    <display-name>533</display-name>
+  </channel>
+  <channel id="0537.directv.com">
+    <display-name>SHOe</display-name>
+    <display-name>537</display-name>
+    <display-name>537</display-name>
+  </channel>
+  <channel id="0538.directv.com">
+    <display-name>SHO2</display-name>
+    <display-name>538</display-name>
+    <display-name>538</display-name>
+  </channel>
+  <channel id="0539.directv.com">
+    <display-name>SHO3HD</display-name>
+    <display-name>539</display-name>
+    <display-name>539</display-name>
+  </channel>
+  <channel id="0540.directv.com">
+    <display-name>SHOw</display-name>
+    <display-name>540</display-name>
+    <display-name>540</display-name>
+  </channel>
+  <channel id="0544.directv.com">
+    <display-name>TMCe</display-name>
+    <display-name>544</display-name>
+    <display-name>544</display-name>
+  </channel>
+  <channel id="0545.directv.com">
+    <display-name>TMCw</display-name>
+    <display-name>545</display-name>
+    <display-name>545</display-name>
+  </channel>
+  <channel id="0547.directv.com">
+    <display-name>FLIX</display-name>
+    <display-name>547</display-name>
+    <display-name>547</display-name>
+  </channel>
+  <channel id="0549.directv.com">
+    <display-name>SUND</display-name>
+    <display-name>549</display-name>
+    <display-name>549</display-name>
+  </channel>
+  <channel id="0550.directv.com">
+    <display-name>IFC</display-name>
+    <display-name>550</display-name>
+    <display-name>550</display-name>
+  </channel>
+  <channel id="0552.directv.com">
+    <display-name>HDNM</display-name>
+    <display-name>552</display-name>
+    <display-name>552</display-name>
+  </channel>
+  <channel id="0570.directv.com">
+    <display-name>PTNW</display-name>
+    <display-name>570</display-name>
+    <display-name>570</display-name>
+  </channel>
+  <channel id="0573.directv.com">
+    <display-name>PTNW</display-name>
+    <display-name>573</display-name>
+    <display-name>573</display-name>
+  </channel>
+  <channel id="0575.directv.com">
+    <display-name>PTNW</display-name>
+    <display-name>575</display-name>
+    <display-name>575</display-name>
+  </channel>
+  <channel id="0578.directv.com">
+    <display-name>PTNW</display-name>
+    <display-name>578</display-name>
+    <display-name>578</display-name>
+  </channel>
+  <channel id="0580.directv.com">
+    <display-name>PPV</display-name>
+    <display-name>580</display-name>
+    <display-name>580</display-name>
+  </channel>
+  <channel id="0582.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>582</display-name>
+    <display-name>582</display-name>
+  </channel>
+  <channel id="0589.directv.com">
+    <display-name>PBTV</display-name>
+    <display-name>589</display-name>
+    <display-name>589</display-name>
+  </channel>
+  <channel id="0590.directv.com">
+    <display-name>PBTV</display-name>
+    <display-name>590</display-name>
+    <display-name>590</display-name>
+  </channel>
+  <channel id="0591.directv.com">
+    <display-name>BUY6</display-name>
+    <display-name>591</display-name>
+    <display-name>591</display-name>
+  </channel>
+  <channel id="0592.directv.com">
+    <display-name>BUY6</display-name>
+    <display-name>592</display-name>
+    <display-name>592</display-name>
+  </channel>
+  <channel id="0593.directv.com">
+    <display-name>ADLT</display-name>
+    <display-name>593</display-name>
+    <display-name>593</display-name>
+  </channel>
+  <channel id="0594.directv.com">
+    <display-name>RKTV</display-name>
+    <display-name>594</display-name>
+    <display-name>594</display-name>
+  </channel>
+  <channel id="0595.directv.com">
+    <display-name>REAL</display-name>
+    <display-name>595</display-name>
+    <display-name>595</display-name>
+  </channel>
+  <channel id="0596.directv.com">
+    <display-name>JUCY</display-name>
+    <display-name>596</display-name>
+    <display-name>596</display-name>
+  </channel>
+  <channel id="0597.directv.com">
+    <display-name>FRSH</display-name>
+    <display-name>597</display-name>
+    <display-name>597</display-name>
+  </channel>
+  <channel id="0598.directv.com">
+    <display-name>SEXX</display-name>
+    <display-name>598</display-name>
+    <display-name>598</display-name>
+  </channel>
+  <channel id="0599.directv.com">
+    <display-name>HUST</display-name>
+    <display-name>599</display-name>
+    <display-name>599</display-name>
+  </channel>
+  <channel id="0600.directv.com">
+    <display-name>DTV</display-name>
+    <display-name>600</display-name>
+    <display-name>600</display-name>
+  </channel>
+  <channel id="0602.directv.com">
+    <display-name>TVG</display-name>
+    <display-name>602</display-name>
+    <display-name>602</display-name>
+  </channel>
+  <channel id="0603.directv.com">
+    <display-name>VS</display-name>
+    <display-name>603</display-name>
+    <display-name>603</display-name>
+  </channel>
+  <channel id="0605.directv.com">
+    <display-name>SPMN</display-name>
+    <display-name>605</display-name>
+    <display-name>605</display-name>
+  </channel>
+  <channel id="0606.directv.com">
+    <display-name>OUT</display-name>
+    <display-name>606</display-name>
+    <display-name>606</display-name>
+  </channel>
+  <channel id="0607.directv.com">
+    <display-name>SPD</display-name>
+    <display-name>607</display-name>
+    <display-name>607</display-name>
+  </channel>
+  <channel id="0608.directv.com">
+    <display-name>HUNT</display-name>
+    <display-name>608</display-name>
+    <display-name>608</display-name>
+  </channel>
+  <channel id="0610.directv.com">
+    <display-name>BTN</display-name>
+    <display-name>610</display-name>
+    <display-name>610</display-name>
+  </channel>
+  <channel id="0613.directv.com">
+    <display-name>CBSC</display-name>
+    <display-name>613</display-name>
+    <display-name>613</display-name>
+  </channel>
+  <channel id="0614.directv.com">
+    <display-name>ESPU</display-name>
+    <display-name>614</display-name>
+    <display-name>614</display-name>
+  </channel>
+  <channel id="0616.directv.com">
+    <display-name>MTN</display-name>
+    <display-name>616</display-name>
+    <display-name>616</display-name>
+  </channel>
+  <channel id="0618.directv.com">
+    <display-name>FUELHD</display-name>
+    <display-name>618</display-name>
+    <display-name>618</display-name>
+  </channel>
+  <channel id="0619.directv.com">
+    <display-name>FSC</display-name>
+    <display-name>619</display-name>
+    <display-name>619</display-name>
+  </channel>
+  <channel id="0620.directv.com">
+    <display-name>GOL</display-name>
+    <display-name>620</display-name>
+    <display-name>620</display-name>
+  </channel>
+  <channel id="0621.directv.com">
+    <display-name>SET</display-name>
+    <display-name>621</display-name>
+    <display-name>621</display-name>
+  </channel>
+  <channel id="0622.directv.com">
+    <display-name>STSa</display-name>
+    <display-name>622</display-name>
+    <display-name>622</display-name>
+  </channel>
+  <channel id="0624.directv.com">
+    <display-name>FSE</display-name>
+    <display-name>624</display-name>
+    <display-name>624</display-name>
+  </channel>
+  <channel id="0628.directv.com">
+    <display-name>NESNHD</display-name>
+    <display-name>628</display-name>
+    <display-name>628</display-name>
+  </channel>
+  <channel id="0630.directv.com">
+    <display-name>CSNEHD</display-name>
+    <display-name>630</display-name>
+    <display-name>630</display-name>
+  </channel>
+  <channel id="0631.directv.com">
+    <display-name>YESHD</display-name>
+    <display-name>631</display-name>
+    <display-name>631</display-name>
+  </channel>
+  <channel id="0634.directv.com">
+    <display-name>MSG</display-name>
+    <display-name>634</display-name>
+    <display-name>634</display-name>
+  </channel>
+  <channel id="0635.directv.com">
+    <display-name>MSG+</display-name>
+    <display-name>635</display-name>
+    <display-name>635</display-name>
+  </channel>
+  <channel id="0636.directv.com">
+    <display-name>NYa</display-name>
+    <display-name>636</display-name>
+    <display-name>636</display-name>
+  </channel>
+  <channel id="0637.directv.com">
+    <display-name>NYa</display-name>
+    <display-name>637</display-name>
+    <display-name>637</display-name>
+  </channel>
+  <channel id="0638.directv.com">
+    <display-name>NYa</display-name>
+    <display-name>638</display-name>
+    <display-name>638</display-name>
+  </channel>
+  <channel id="0639.directv.com">
+    <display-name>SNYHD</display-name>
+    <display-name>639</display-name>
+    <display-name>639</display-name>
+  </channel>
+  <channel id="0640.directv.com">
+    <display-name>MASNHD</display-name>
+    <display-name>640</display-name>
+    <display-name>640</display-name>
+  </channel>
+  <channel id="0642.directv.com">
+    <display-name>CSN</display-name>
+    <display-name>642</display-name>
+    <display-name>642</display-name>
+  </channel>
+  <channel id="0643.directv.com">
+    <display-name>CSNa</display-name>
+    <display-name>643</display-name>
+    <display-name>643</display-name>
+  </channel>
+  <channel id="0644.directv.com">
+    <display-name>FSTN</display-name>
+    <display-name>644</display-name>
+    <display-name>644</display-name>
+  </channel>
+  <channel id="0645.directv.com">
+    <display-name>FSCR</display-name>
+    <display-name>645</display-name>
+    <display-name>645</display-name>
+  </channel>
+  <channel id="0646.directv.com">
+    <display-name>FSS</display-name>
+    <display-name>646</display-name>
+    <display-name>646</display-name>
+  </channel>
+  <channel id="0649.directv.com">
+    <display-name>SSHD</display-name>
+    <display-name>649</display-name>
+    <display-name>649</display-name>
+  </channel>
+  <channel id="0650.directv.com">
+    <display-name>RSNa</display-name>
+    <display-name>650</display-name>
+    <display-name>650</display-name>
+  </channel>
+  <channel id="0652.directv.com">
+    <display-name>RSNa</display-name>
+    <display-name>652</display-name>
+    <display-name>652</display-name>
+  </channel>
+  <channel id="0653.directv.com">
+    <display-name>SUNHD</display-name>
+    <display-name>653</display-name>
+    <display-name>653</display-name>
+  </channel>
+  <channel id="0654.directv.com">
+    <display-name>FSFL</display-name>
+    <display-name>654</display-name>
+    <display-name>654</display-name>
+  </channel>
+  <channel id="0655.directv.com">
+    <display-name>FLa1</display-name>
+    <display-name>655</display-name>
+    <display-name>655</display-name>
+  </channel>
+  <channel id="0656.directv.com">
+    <display-name>FLa2</display-name>
+    <display-name>656</display-name>
+    <display-name>656</display-name>
+  </channel>
+  <channel id="0659.directv.com">
+    <display-name>FSPI</display-name>
+    <display-name>659</display-name>
+    <display-name>659</display-name>
+  </channel>
+  <channel id="0660.directv.com">
+    <display-name>FSOH</display-name>
+    <display-name>660</display-name>
+    <display-name>660</display-name>
+  </channel>
+  <channel id="0661.directv.com">
+    <display-name>FSCN</display-name>
+    <display-name>661</display-name>
+    <display-name>661</display-name>
+  </channel>
+  <channel id="0662.directv.com">
+    <display-name>STOHD</display-name>
+    <display-name>662</display-name>
+    <display-name>662</display-name>
+  </channel>
+  <channel id="0663.directv.com">
+    <display-name>FSDHD</display-name>
+    <display-name>663</display-name>
+    <display-name>663</display-name>
+  </channel>
+  <channel id="0664.directv.com">
+    <display-name>FSDa</display-name>
+    <display-name>664</display-name>
+    <display-name>664</display-name>
+  </channel>
+  <channel id="0665.directv.com">
+    <display-name>CSNC</display-name>
+    <display-name>665</display-name>
+    <display-name>665</display-name>
+  </channel>
+  <channel id="0666.directv.com">
+    <display-name>CSNC</display-name>
+    <display-name>666</display-name>
+    <display-name>666</display-name>
+  </channel>
+  <channel id="0668.directv.com">
+    <display-name>FSNOHD</display-name>
+    <display-name>668</display-name>
+    <display-name>668</display-name>
+  </channel>
+  <channel id="0669.directv.com">
+    <display-name>FSWI</display-name>
+    <display-name>669</display-name>
+    <display-name>669</display-name>
+  </channel>
+  <channel id="0671.directv.com">
+    <display-name>FSMW</display-name>
+    <display-name>671</display-name>
+    <display-name>671</display-name>
+  </channel>
+  <channel id="0673.directv.com">
+    <display-name>FSIN</display-name>
+    <display-name>673</display-name>
+    <display-name>673</display-name>
+  </channel>
+  <channel id="0676.directv.com">
+    <display-name>FSSW</display-name>
+    <display-name>676</display-name>
+    <display-name>676</display-name>
+  </channel>
+  <channel id="0677.directv.com">
+    <display-name>FSSW</display-name>
+    <display-name>677</display-name>
+    <display-name>677</display-name>
+  </channel>
+  <channel id="0678.directv.com">
+    <display-name>FSH</display-name>
+    <display-name>678</display-name>
+    <display-name>678</display-name>
+  </channel>
+  <channel id="0679.directv.com">
+    <display-name>FSOK</display-name>
+    <display-name>679</display-name>
+    <display-name>679</display-name>
+  </channel>
+  <channel id="0680.directv.com">
+    <display-name>RSNa</display-name>
+    <display-name>680</display-name>
+    <display-name>680</display-name>
+  </channel>
+  <channel id="0681.directv.com">
+    <display-name>ALTHD</display-name>
+    <display-name>681</display-name>
+    <display-name>681</display-name>
+  </channel>
+  <channel id="0683.directv.com">
+    <display-name>FSRM</display-name>
+    <display-name>683</display-name>
+    <display-name>683</display-name>
+  </channel>
+  <channel id="0684.directv.com">
+    <display-name>FSUT</display-name>
+    <display-name>684</display-name>
+    <display-name>684</display-name>
+  </channel>
+  <channel id="0686.directv.com">
+    <display-name>FSAZHD</display-name>
+    <display-name>686</display-name>
+    <display-name>686</display-name>
+  </channel>
+  <channel id="0687.directv.com">
+    <display-name>FSNW</display-name>
+    <display-name>687</display-name>
+    <display-name>687</display-name>
+  </channel>
+  <channel id="0688.directv.com">
+    <display-name>FSNW</display-name>
+    <display-name>688</display-name>
+    <display-name>688</display-name>
+  </channel>
+  <channel id="0692.directv.com">
+    <display-name>FSW</display-name>
+    <display-name>692</display-name>
+    <display-name>692</display-name>
+  </channel>
+  <channel id="0694.directv.com">
+    <display-name>FSPT</display-name>
+    <display-name>694</display-name>
+    <display-name>694</display-name>
+  </channel>
+  <channel id="0696.directv.com">
+    <display-name>CSNB</display-name>
+    <display-name>696</display-name>
+    <display-name>696</display-name>
+  </channel>
+  <channel id="0697.directv.com">
+    <display-name>CSNB</display-name>
+    <display-name>697</display-name>
+    <display-name>697</display-name>
+  </channel>
+  <channel id="0698.directv.com">
+    <display-name>CSCA</display-name>
+    <display-name>698</display-name>
+    <display-name>698</display-name>
+  </channel>
+  <channel id="0699.directv.com">
+    <display-name>CSCa</display-name>
+    <display-name>699</display-name>
+    <display-name>699</display-name>
+  </channel>

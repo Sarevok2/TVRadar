@@ -1,0 +1,47 @@
+NAME
+    tv_grab_re - Grab TV listings for Reunion Island (France).
+
+SYNOPSIS
+    To configure: tv_grab_re --configure [--config-file FILE] To grab
+    channels listing: tv_grab_re --list-channels [--output FILE] To grab
+    programmes listings: tv_grab_re [--output FILE] [--offset N] [--days N]
+    [--quiet] Slower, detailed grab: tv_grab_re --slow [--output FILE]
+    [--offset N] [--days N] [--quiet] Help: tv_grab_fr --help
+
+DESCRIPTION
+    Output TV listings for Canal Satellite Reunion and Parabole Reunion
+    channels available in Reunion Island. The data comes from
+    www.canalsatellite-reunion.com for Canal Satellite Reunion and from
+    www.parabolereunion.com for Parabole Reunion. The default is to grab
+    listing only for the current day. By default program descriptions are
+    not downloaded, so if you want description and credits, you should
+    activate the --slow option. To grab listing for hertzian channels,
+    select them in Canal Satellite Reunion grid.
+
+    --configure Grab channels informations and ask for channel type and
+    names.
+
+    --output FILE Write to FILE rather than standard output.
+
+    --days N Grab N days, rather than only for the current day.
+
+    --offset N Start grabbing for N days in the future, eg offset 1 means
+    start with tomorrow.
+
+    --slow Get additional information from the website, like program
+    description and credits.
+
+    --quiet Suppress the progress messages normally written to standard
+    error.
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+SEE ALSO
+    xmltv(5)
+
+AUTHOR
+    Eric Castelnau, eric.castelnau@free.fr Inspired by tv_grab_fr written by
+    Sylvain Fabre, centraladmin@lahiette.com
+

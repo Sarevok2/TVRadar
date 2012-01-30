@@ -1,0 +1,34 @@
+NAME
+    tv_remove_some_overlapping - Remove some overlapping programmes from
+    XMLTV data.
+
+SYNOPSIS
+    tv_remove_some_overlapping [--help] [--output FILE] [FILE...]
+
+DESCRIPTION
+    Read one or more XMLTV files and write a file to standard ouput
+    containing the same data, except that some 'magazine' programmes which
+    seem to contain two or more other programmes are removed.
+
+    For example, if 'Schools TV' runs from 10:00 to 12:00, and there are two
+    programmes 'History' from 10:00 to 11:00 and 'Geography' from 11:00 to
+    12:00 on the same channel, then 'Schools TV' could be removed. A
+    programme is removed only if there are two or more other programmes
+    which partition its timeslot, which implies that it and these other
+    programmes must have stop times specified.
+
+    To avoid throwing away any real programmes, no programme will be
+    discarded if it has content data other than title and URL.
+
+    Filtering this tool won't remove all overlapping programmes but it will
+    deal with the 'big magazine programme containing smaller programmes'
+    data commonly seen from listings sources.
+
+    --output FILE write to FILE rather than standard output
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Ed Avis, ed@membled.com
+

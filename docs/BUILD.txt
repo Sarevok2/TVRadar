@@ -1,0 +1,7 @@
+REQUIREMENTS FOR BUILDING TV RADAR:
+
+1. Add all .jar files in the lib directory to your class path
+
+2. The resources directory should be in the root directory of your project, or whatever directory you will be running the program from.
+
+3. XMLTV is not included with the source distribution.  To build a windows distribution, Download XMLTV at http://wiki.xmltv.org/index.php/Main_Page and put the xmltv folder into the resources folder.  On Linux XMLTV will need to be installed seperatly.  On most debian based systems like Ubuntu you can run 'apt-get install xmltv'.  Otherwise you can download from the XMLTV web page and install from source.

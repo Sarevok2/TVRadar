@@ -1,0 +1,128 @@
+NAME
+    tv_grab_eu_epgdata - Grab TV listings for parts of Europe.
+
+SYNOPSIS
+    tv_grab_eu_epgdata --help tv_grab_eu_epgdata tv_grab_eu_epgdata
+    --version
+
+    tv_grab_eu_epgdata --capabilities
+
+    tv_grab_eu_epgdata --description
+
+    tv_grab_eu_epgdata [--config-file FILE] [--days N] [--offset N]
+    [--output FILE] [--quiet] [--debug]
+
+    tv_grab_eu_epgdata --configure [--config-file FILE]
+
+    tv_grab_eu_epgdata --configure-api [--stage NAME] [--config-file FILE]
+    [--output FILE]
+
+    tv_grab_eu_epgdata --list-channels [--config-file FILE] [--output FILE]
+    [--quiet] [--debug]
+
+    tv_grab_eu_epgdata --preferredmethod
+
+DESCRIPTION
+    Output TV and listings in XMLTV format for many stations available in
+    Europe.
+
+    First you must run tv_grab_eu_epgdata --configure to choose which
+    stations you want to receive.
+
+    Then running tv_grab_eu_epgdata with no arguments will get a listings
+    for the stations you chose for five days including today.
+
+    This is a commercial grabber. Go to
+    http://wiki.xmltv.org/index.php/EU_epgdata to sign up or send an e-mail
+    to service@epgdata.com for further information. It's also possible to
+    ask for a test account.
+
+OPTIONS
+    --configure Prompt for which stations to download and write the
+    configuration file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_eu_epgdata.conf. This is the file written by
+    --configure and read when grabbing.
+
+    --gui OPTION Use this option to enable a graphical interface to be used.
+    OPTION may be 'Tk', or left blank for the best available choice.
+    Additional allowed values of OPTION are 'Term' for normal terminal
+    output (default) and 'TermNoProgressBar' to disable the use of
+    Term::ProgressBar.
+
+    --output FILE When grabbing, write output to FILE rather than standard
+    output.
+
+    --days N When grabbing, grab N days rather than 5.
+
+    --offset N Start grabbing at today + N days.
+
+    --quiet Do not show status messages.
+
+    --debug Provide more information on progress to stderr to help in
+    debugging.
+
+    --list-channels Output a list of all channels that data is available
+    for. The list is in xmltv-format.
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+    --preferredmethod Shows the preferred method for downloading data (see
+    http://xmltv.org/wiki/xmltvcapabilities.html) =head1 ENVIRONMENT
+    VARIABLES
+
+    The environment variable HOME can be set to change where configuration
+    files are stored. All configuration is stored in $HOME/.xmltv/. On
+    Windows, it might be necessary to set HOME to a path without spaces in
+    it.
+
+SUPPORTED CHANNELS
+    For a list of supported channels, see the channel_ids file distributed
+    with this grabber. If additional channels are available, you will
+    receive a warning when you run --configure.
+
+    Once I am aware that new channels are available, the channel_ids file
+    will be updated and this grabber will automatically fetch an updated
+    copy.
+
+COMPATIBILITY
+    The channel ids used in this grabber aim to be mostly possible with
+    other grabbers, eg tv_grab_de_prisma and some other grabbers for other
+    countries. NOTE: Retaining compatibility was not always possible or
+    practicable. You can get a list of channel ids using --list-channels
+
+AUTHOR
+    Michael Haas, laga -at- laga -dot- ath -dot - cx. This documentation is
+    copied from tv_grab_se_swedb by Mattias Holmlund, which in turn was
+    copied from tv_grab_uk by Ed Avis. Parts of the code are copied from
+    tv_grab_se_swedb and tv_grab_na_dd (in XMLTV 0.5.45) as well as various
+    other sources.
+
+BUGS
+    There's no proper support for channels with locally different schedules.
+    For example, if your EPG package is a German one, you'll get the EPG
+    schedule for Germany even if you preferred the Swiss schedule which is
+    also available in the data (for some channels at least).
+
+    Timezones are not handled correctly. Currently, you have to enter your
+    time zone manually during the configure step. You have to do this every
+    time your time zone changes, eg for daylight saving time ("Sommerzeit"
+    and "Normalzeit" for my fellow Germans). I'll try to have this fixed for
+    the next XMLTV release. Please see this thread for further discussion
+    and some additional issues:
+    http://thread.gmane.org/gmane.comp.tv.xmltv.devel/7919 FYI: you can
+    modify the time zone directly in the config file which is usually
+    located at ~/.xmltv/tv_grab_eu_epgdata.conf or ~/.mythtv/FOO.xmltv where
+    FOO is the name of your video source in MythTV.
+
+    If the data source gives us data for one day, they'll also cover a part
+    of the following day. Maybe this should be fixed. Please note: data is
+    not overlapping! So if we want to get data for today, we might as well
+    grab yesterday because that'll give us EPG till ~5am for today.
+
+    I'm sure this list is not complete. Let me know if you encounter
+    additional problems.
+

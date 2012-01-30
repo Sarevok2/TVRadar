@@ -1,0 +1,78 @@
+NAME
+    tv_grab_se_swedb - Grab TV listings for Sweden.
+
+SYNOPSIS
+    tv_grab_se_swedb --help
+
+    tv_grab_se_swedb --configure [--config-file FILE] [--gui OPTION]
+
+    tv_grab_se_swedb [--config-file FILE] [--days N] [--offset N] [--output
+    FILE] [--quiet] [--debug]
+
+    tv_grab_se_swedb --list-channels [--config-file FILE] [--output FILE]
+    [--quiet] [--debug]
+
+DESCRIPTION
+    Output TV and listings in XMLTV format for many stations available in
+    Sweden.
+
+    First you must run tv_grab_se_swedb --configure to choose which stations
+    you want to receive.
+
+    Then running tv_grab_se_swedb with no arguments will get a listings for
+    the stations you chose for five days including today.
+
+OPTIONS
+    --configure Prompt for which stations to download and write the
+    configuration file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_se_swedb.conf. This is the file written by
+    --configure and read when grabbing.
+
+    --gui OPTION Use this option to enable a graphical interface to be used.
+    OPTION may be 'Tk', or left blank for the best available choice.
+    Additional allowed values of OPTION are 'Term' for normal terminal
+    output (default) and 'TermNoProgressBar' to disable the use of
+    Term::ProgressBar.
+
+    --output FILE When grabbing, write output to FILE rather than standard
+    output.
+
+    --days N When grabbing, grab N days rather than 5.
+
+    --offset N Start grabbing at today + N days. N may be negative.
+
+    --quiet Suppress the progress-bar normally shown on standard error.
+
+    --debug Provide more information on progress to stderr to help in
+    debugging.
+
+    --list-channels Output a list of all channels that data is available
+    for. The list is in xmltv-format.
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+ERROR HANDLING
+    If the grabber fails to download data for some channel on a specific
+    day, it will print an errormessage to STDERR and then continue with the
+    other channels and days. The grabber will exit with a status code of 1
+    to indicate that the data is incomplete.
+
+ENVIRONMENT VARIABLES
+    The environment variable HOME can be set to change where configuration
+    files are stored. All configuration is stored in $HOME/.xmltv/. On
+    Windows, it might be necessary to set HOME to a path without spaces in
+    it.
+
+SUPPORTED CHANNELS
+    For information on supported channels, see http://tv.swedb.se/
+
+AUTHOR
+    Mattias Holmlund, mattias -at- holmlund -dot- se. This documentation and
+    parts of the code copied from tv_grab_uk by Ed Avis, ed -at- membled
+    -dot- com.
+
+BUGS

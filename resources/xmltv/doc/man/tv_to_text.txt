@@ -1,0 +1,18 @@
+NAME
+    tv_to_text - Convert XMLTV listings to text.
+
+SYNOPSIS
+    tv_to_text [--help] [--output FILE] [FILE...]
+
+DESCRIPTION
+    Read XMLTV data and output a summary of listings. The programme titles,
+    subtitles, times and channels are shown.
+
+    --output FILE write to FILE rather than standard output
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Ed Avis, ed@membled.com
+

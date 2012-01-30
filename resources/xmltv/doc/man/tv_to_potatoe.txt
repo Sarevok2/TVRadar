@@ -1,0 +1,22 @@
+NAME
+    tv_to_potatoe - Convert XMLTV listings to potatoe format.
+
+SYNOPSIS
+    tv_to_potatoe [--help] [--outdir PATH] [--lang LANGUAGE] [FILE...]
+
+DESCRIPTION
+    Read XMLTV data and output potatoe files to either the current working
+    directory or the specified one.
+
+    --outdir PATH write to PATH rather than current working directory
+
+    --lang LANGUAGE the LANGUAGE you prefer. This argument may be specified
+    multiple times. If no --lang arguments are provided, German is used as
+    the language of choice, followed by English.
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Stefan Siegl, ssiegl@gmx.de
+

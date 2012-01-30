@@ -1,0 +1,417 @@
+# prog_titles_to_process
+#
+# $Id: prog_titles_to_process,v 1.48 2009/08/07 22:58:56 knowledgejunkie Exp $
+#
+# This file contains programme titles that should be processed in order to 
+# produce more consistent programme titles and subtitles. Some programme
+# entries in the listings data from the Radio Times contain subtitle/episode 
+# information in the title field, others may contain the programme title
+# and subtitle reversed, and yet more may contain 'season' information that is
+# not part of the programme title. When these entries have a colon separating
+# the title and subtitle components, we use the colon to split the title and 
+# subtitle accordingly. We also flag specific programme titles that are given
+# inconsistently across channels, and provide a consistent title to use in these
+# cases.
+#
+# By default, the tv_grab_uk_rt grabber will read this file and process any 
+# matching programme titles found in the listings data against the flagged
+# titles below. Title processing can be disabled during configuration.
+#
+# Each programme title to process is listed below, with one title per line.
+# Comments are allowed and ignored. Each entry contains 2 pipe-delimited 
+# fields, the first of which should contain a procesing code, the second
+# the programme title entry or non-title text seen in the Radio Times data. 
+# How the entry is processed depends upon the value of the processing code in
+# the first field. Processing codes used are:
+#
+# 1) The text in the second field is non-title text that is to be removed from
+#    any programme titles found containing this text at the beginning of the 
+#    <title> element, separated from the actual title with a colon.
+#
+# 2) The text in the second field is the desired title of a programme when the 
+#    raw listings data contains both the programme's title _and_ episode in 
+#    the title ($title:$episode). We reassign the episode information to the 
+#    <episode> element, leaving only the programme title in the <title> element.
+#
+# 3) The text in the second field is the desired title of a programme when the
+#    raw listings data contains both the programme's episode _and_ title in
+#    the title ($episode:$title). We reassign the episode information to the
+#    <episode> element, leaving only the programme title in the <title> element.
+#
+# 4) The text in the second field is the desired title of a programme which is 
+#    listed in the raw listings data as the programme's episode (i.e. the title
+#    and episode details have been reversed). We therefore reverse the 
+#    assignment to ensure the <title> and <episode> elements contain the correct
+#    information.
+#
+# 5) The text in the second field contains two programme titles, separated by a
+#    tilde (~). The first title is the inconsistent programme title to search
+#    for during processing, and the second title is a consistent title to
+#    as a replacement in the listings output. Programme titles can be
+#    inconsistent across channels (e.g. Law and Order vs Law & Order) or use
+#    inconsistent grammar (xxxx's vs xxxxs'), so we provide a consistent 
+#    title, obtained from the programme itself, its website or other media, 
+#    to use instead.
+#
+#
+# Non-title information to remove from beginning of titles
+#
+1|4 Music
+1|4Sport
+1|Action Heroes Season
+1|Action Movie Season
+1|Arnie Season
+1|Basketball
+1|BBC Four on BBC Two
+1|BBC Switch
+1|Best of British Season
+1|Bond Season
+1|Brit Flick Season
+1|CBBC
+1|CBeebies
+1|CBeebies Birthdays
+1|CITV
+1|Comedy Season
+1|CSI: 'PSYCHOS'
+1|Cult Season
+1|David Lean Season
+1|Horror Season
+1|ITV2 Morning Entertainment
+1|Lady Heather Night
+1|Michael Caine Season
+1|Motorsport
+1|MTV Digs
+1|No Limits Season
+1|Python Night
+1|Rock Star Week
+1|Screen Two
+1|Shipwreck Saturday
+1|Sign Zone
+1|Special Forces Night
+1|Spielberg Season
+1|STRIKE NIGHT
+1|Sword & Sorcery Season
+1|T4
+1|T4 on the Beach
+1|Thrillers Season
+1|Van Damme Season
+1|War on Four
+1|War Season
+1|Western Season
+#
+# $title:$episode seen in source data title
+#
+2|1916: Total War
+2|3 Minute Wonder
+2|4Music Presents
+2|4Music Sessions
+2|4Play
+2|AFL
+2|Aircrash Unsolved
+2|Animated Bible Stories
+2|A Meet the Ancestors Special
+2|A Perry Mason Mystery
+2|After the War
+2|Arena
+2|Autopsy
+2|BBC Four Session
+2|BBC Four Sessions
+2|BBC FOUR Proms 2009
+2|BBC Proms 2009
+2|Behind Bars
+2|Best of British
+2|Biography
+2|Blitzkrieg
+2|Bodyshock
+2|Body Spectacular
+2|Bone Detectives
+2|BOOKtalk
+2|Bremner, Bird and Fortune
+2|Briefings
+2|Britain's Got More Talent
+2|Cinemania
+2|Classic Albums
+2|Coast
+2|Columbo
+2|Comedy Classics
+2|Comedy Lab
+2|Comedy Live Presents
+2|Comedy Showcase
+2|Coming Up
+2|Corwin's Quest
+2|Cribs
+2|Crime Scene USA
+2|Criminal Underworld Histories
+2|Curriculum Bites
+2|Cutting Edge
+2|Monarchy by David Starkey
+2|Deadly Dozen
+2|Diagnosis Murder
+2|Diagnosis X
+2|Dispatches
+2|Dom's on the Case
+2|Drama Trails
+2|Drive Thru
+2|E! Entertainment Special
+2|E! True Hollywood Story
+2|E4 Music Lessons
+2|Eco-Tech
+2|Edwardians in Colour
+2|Elvis
+2|Emmerdale
+2|Essential
+2|Eurografters
+2|Explore
+2|Exposed
+2|Extraordinary Humans
+2|Extraordinary People
+2|Extreme
+2|FA Cup Highlights
+2|FA Cup Live
+2|Faith and Music
+2|FIFA World Cup
+2|Firepower
+2|First Cut
+2|Freaky Eaters
+2|GAA
+2|Gardeners' World Special
+2|Gardeners' World
+2|Gaymers Grassroots Gigs
+2|GCSE Bitesize Revision
+2|GCSE Bitesize
+2|Glastonbury
+2|Glastonbury Calling
+2|Great Battles
+2|Great Britons
+2|Great Historical Britons
+2|Great Ocean Adventures
+2|Greatest Hits
+2|Guess the Year
+2|Guinea Pig
+2|Heavy Metal
+2|Henry VIII
+2|Hidden Egypt
+2|Hollywood Lives
+2|Hollywood Rocks the Movies
+2|Horizon
+2|Inside
+2|Inside Track
+2|Inspector Wexford
+2|IPL
+2|It Takes Two
+2|Jane Doe
+2|JD Set Presents
+2|Kalahari
+2|Key Stage 3 Bitesize Revision
+2|Kids by the Dozen
+2|Killer Tanks
+2|Kings of Cool
+2|Lawless Britain
+2|Legends
+2|Levi's Ones to Watch
+2|LG Action Sports World Championships 2008
+2|Live AFL
+2|Live Hockey
+2|Live IPL
+2|Live NRL
+2|Live Rugby Union
+2|Louis Theroux
+2|Lyndal's Lifeline
+2|Major League Baseball
+2|Making the Video
+2|Match of the Day Live
+2|McBride
+2|Miracle Makers
+2|Moon Machines
+2|Most Daring
+2|Moto GP
+2|MTV 2 Years
+2|MTV Live
+2|MTV Unplugged
+2|My Unique Family
+2|My Life as an Animal
+2|Mytseries and Legends
+2|Mysteries of the Universe
+2|Mystery Woman
+2|Nightwatch with Steve Scott
+2|Murder, She Wrote
+2|Naked
+2|Nature Unleashed
+2|NRL
+2|Number 1s
+2|Oceans
+2|Offset
+2|Our World
+2|Panorama
+2|Panorama Special
+2|Pd James
+2|PD James
+2|P D James
+2|PEB
+2|Perry Mason
+2|Piers Morgan's Life Stories
+2|Pimp My Ride
+2|Primary Geography
+2|Primary History
+2|Quattro Events
+2|Reading and Leeds Festival
+2|Real Crime
+2|Revelations
+2|Rogue Raiders
+2|Rides
+2|Ruth Rendell's Inspector Wexford
+2|Secrets of Egypt
+2|Serengeti
+2|Seven of One
+2|Sexiest
+2|Shades of Love
+2|Sherlock Holmes
+2|Shockwaves Album Chart Show
+2|Sin Cities 4
+2|Six on the Beach
+2|Songbook
+2|South Bank Show
+2|Spanking New Sessions
+2|Spectacle
+2|SPL
+2|Stars of the 80s
+2|Storytellers
+2|Storyville
+2|Super Sleuths
+2|Superhuman
+2|Surviving
+2|Surviving Disaster
+2|T4 Movie Special
+2|Talk French
+2|TCM Presents Under the Influence
+2|Telling Tales
+2|The Afternoon Play
+2|The BBC One Sessions
+2|The Bill
+2|The Cinema Show
+2|The Colour of War
+2|The Culture Show
+2|The Department Store
+2|The Great Biker Build-Off
+2|The JD Set Presents
+2|The Naked Chef
+2|The Prisoner
+2|The Rewind Chart with Scott Mills
+2|The Ruth Rendell Mysteries
+2|The Soup Presents
+2|The South Bank Show
+2|The Third Reich in Colour
+2|The Tower
+2|The Twenties in Colour
+2|The Weakest Link
+2|The Wild West
+2|The World Stands Up
+2|The Xtra Factor
+2|This World
+2|Those Were the Days
+2|Thoroughly Modern
+2|Ticket to Ride 2009
+2|Time Team Special
+2|Timeshift
+2|Time Shift
+2|Timewatch
+2|Top 10
+2|Top Ten
+2|Top 20
+2|Top 5
+2|Top Five
+2|Top Gear
+2|Top of the Pops
+2|Travel Spies
+2|True Stories
+2|Turning Points
+2|UEFA Champions League
+2|UEFA Champions League Live
+2|UEFA Cup Live
+2|Ultra Science
+2|Understanding
+2|Unknown Africa
+2|Unplugged
+2|Unsolved History
+2|Vaults
+2|VH1 Live
+2|VH1 Loves
+2|VH1 Midnight Live
+2|VH1 Says
+2|Videography
+2|Vintage
+2|Viva la Bam
+2|Walking with Dinosaurs Special
+2|Weapons Masters
+2|Weapon Masters
+2|What the Ancients Knew
+2|Wish You Were Here - Now and Then
+2|Wish You Were Here - Now And Then
+2|Wonderland
+2|World Rally
+2|World's Biggest Airliner
+#
+# $subtitle:$title seen in source data title
+#
+3|A Time Team Special
+3|Austin Stevens' Adventures
+3|E! Special
+3|E! True Hollywood Story
+3|MTV Live
+3|New Heroes of Comedy
+3|Omnibus
+3|Storyville
+3|Style Star
+3|T4 Movie Special
+3|The South Bank Show
+3|Time Team Special
+3|Timeshift
+3|Time Shift
+3|Timewatch
+3|Tonight
+3|VH1 Classic Special
+3|VH1 Live
+#
+# reversed $title and $subtitle entries seen in source data
+#
+4|Storyville
+4|Timeshift
+4|Time Shift
+4|Timewatch
+#
+# inconsistent programme titles to be written more consistently
+#
+5|P D James~PD James
+5|Pd James~PD James
+5|Later...with Jools Holland~Later... with Jools Holland
+5|Later Live...with Jools Holland~Later Live... with Jools Holland
+5|Law and Order~Law & Order
+5|Law and Order: CI~Law & Order: Criminal Intent
+5|Law and Order: Criminal Intent~Law & Order: Criminal Intent
+5|Law & Order: CI~Law & Order: Criminal Intent
+5|Law and Order: SVU~Law & Order: Special Victims Unit
+5|Law and Order: Special Victims Unit~Law & Order: Special Victims Unit
+5|Law & Order: SVU~Law & Order: Special Victims Unit
+5|Law and Order: Trial by Jury~Law & Order: Trial by Jury
+5|Hercules: the Legendary Journeys~Hercules: The Legendary Journeys
+5|Penn and Teller: Bullsh--t!~Penn and Teller: Bullsh**t!
+5|Dragon's Den~Dragons' Den
+5|New Yankee Workshop~The New Yankee Workshop
+5|Eco- Tech~Eco-Tech
+5|Boots N All~Boots 'n' All
+5|Super League Show~The Super League Show
+5|Shaun The Sheep~Shaun the Sheep
+5|Auschwitz: The Nazis and The Final Solution~Auschwitz: The Nazis and the Final Solution
+5|Kimora: Life In The Fab Lane~Kimora: Life in the Fab Lane
+5|PEB~Party Election Broadcast
+5|Have I Got a Little Bit More News for You~Have I Got a Bit More News for You
+5|BBC Four Session~BBC Four Sessions
+5|Timeshift~Time Shift
+5|Ace Of Cakes~Ace of Cakes
+5|Tour De France 2009 Live~Tour de France 2009 Live
+5|Tour De France 2009~Tour de France 2009
+5|Monarchy with David Starkey~Monarchy by David Starkey
+5|3 Minute Wonders: Farewell Darcey Bussell~3 Minute Wonder: Farewell Darcey Bussell
+5|Elizabeth David: a Life in Recipes~Elizabeth David: A Life in Recipes
+5|Russia - A Journey With Jonathan Dimbleby~Russia - A Journey with Jonathan Dimbleby
+5|David Starkey's Monarchy~Monarchy by David Starkey

@@ -1,0 +1,61 @@
+NAME
+    tv_grab_combiner - Grab listings by combining data from several
+    grabbers.
+
+SYNOPSIS
+    tv_grab_combiner --help
+
+    tv_grab_combiner --configure [--config-file FILE]
+
+    tv_grab_combiner [--config-file FILE] [--days N] [--offset N] [--output
+    FILE] [--quiet]
+
+DESCRIPTION
+    Output TV and listings in XMLTV format by combining data from several
+    other grabbers.
+
+    First you must run tv_grab_combiner --configure to choose which grabbers
+    you want to grab data with and how these grabbers should be configured.
+
+    Then you can run tv_grab_combiner with the --days and --offset options
+    to grab data. Omitting these options will use the default values for
+    these parameters for each grabber. Since these defaults differs between
+    grabbers, you might end up with data for different periods of time for
+    different channels.
+
+OPTIONS
+    --configure Prompt for which grabbers to use, how these grabbers shall
+    be configured and write the configuration file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_combiner.conf. This is the file written by
+    --configure and read when grabbing.
+
+    --output FILE When grabbing, write output to FILE rather than standard
+    output.
+
+    --days N When grabbing, grab N days rather than 5.
+
+    --offset N Start grabbing at today + N days. N may be negative.
+
+    --quiet Suppress the progress-bar normally shown on standard error.
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+ERROR HANDLING
+    If any of the called grabbers exit with an error, tv_grab_combiner will
+    exit with a status code of 1 to indicate that the data is incomplete. If
+    any grabber produces output that is not well-formed xml, the output from
+    that grabber will be ignored and tv_grab_combiner will exit with a
+    status code of 1.
+
+ENVIRONMENT VARIABLES
+    The environment variable HOME can be set to change where configuration
+    files are stored. All configuration is stored in $HOME/.xmltv/.
+
+AUTHOR
+    Mattias Holmlund, mattias -at- holmlund -dot- se.
+
+BUGS

@@ -1,0 +1,99 @@
+NAME
+    tv_grab_huro - Grab TV listings for Hungary or Romania.
+
+SYNOPSIS
+    tv_grab_huro --help
+
+    tv_grab_huro [--config-file FILE] --configure [--gui GUITYPE]
+
+    tv_grab_huro [--config-file FILE] [--output FILE] [--days N] [--offset
+    N] [--slow] [--get-full-description] [--max-desc-length LENGTH] [--icons
+    | (--local-icons DIRECTORY [--no-fetch-icons])] [--gui GUITYPE]
+    [--quiet]
+
+    tv_grab_huro --list-channels --loc [hu | ro] [--icons | (--local-icons
+    DIRECTORY [--no-fetch-icons])]
+
+    tv_grab_huro --capabilities
+
+    tv_grab_huro --version
+
+DESCRIPTION
+    Output TV listings for several channels available in Hungary or Romania.
+    The grabber relies on parsing HTML so it might stop working at any time.
+
+    First run tv_grab_huro --configure to choose, which channels you want to
+    download. Then running tv_grab_huro with no arguments will output
+    listings in XML format to standard output.
+
+    --configure Prompt for which channels, and write the configuration file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_huro.conf. This is the file written by --configure
+    and read when grabbing.
+
+    --gui GUITYPE Use this option to enable a graphical interface to be
+    used. OPTION may be 'Tk', or left blank for the best available choice.
+    Additional allowed values of OPTION are 'Term' for normal terminal
+    output (default) and 'TermNoProgressBar' to disable the use of
+    Term::ProgressBar.
+
+    --output FILE Write to FILE rather than standard output.
+
+    --days N Grab N days. The default is eight.
+
+    --offset N Start N days in the future. The default is to start from
+    today.
+
+    --quiet Suppress the progress messages normally written to standard
+    error.
+
+    --slow Enables long strategy run: port.hu publishes only some (vital)
+    information on the actual listing pages, the rest is shown in a separate
+    popup window. If you'd like to parse the data from these popups as well,
+    supply this flag. But consider that the grab process takes much longer
+    when doing so, since many more web pages have to be retrieved.
+
+    --get-full-description This is quite like --slow but doesn't always
+    download data from popup window. Instead this is only requested if
+    description in overview is truncated.
+
+    --list-channels Write output giving <channel> elements for every channel
+    available (ignoring the config file), but no programmes.
+
+    --capabilities Show which capabilities the grabber supports. For more
+    information, see
+    <http://membled.com/twiki/bin/view/Main/XmltvCapabilities>
+
+    --version Show the version of the grabber.
+
+    --icons and --local-icons DIRECTORY get the URL for channel-logos
+    together with the channel-list. With --icons specified the logos(images)
+    will be not fetched just their URL (http://...) will be written in the
+    output XML. If called with --local-icons, the generated URL (file://...)
+    will point to the the local directory DIRECTORY and all channel logos
+    will be grabbed and saved under this place. Use --no-fetch-icons option
+    to disable the icon fetching. Note: icon fetching currently works for
+    Hungary and Romania only.
+
+    --max-desc-length LENGTH can be used to maximize the lenght of the
+    grabbed program long description. This can be usefull if you have a
+    viewer program (using this xmltv output), which can not be display
+    userfriendly the description if it is more then LENGTH character.
+
+    --help Print a help message and exit.
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Attila Szekeres and Zsolt Varga. Based on tv_grab_fi by Matti Airas.
+    Heavily patched and earlier maintained by Stefan siegl
+    <stesie@brokenpipe.de>, reworked and now maintained by Balazs Molnar
+    <mbdev@freemail.hu>.
+
+BUGS
+    The data source does not include full channels information and the
+    channels are identified by short names rather than the RFC2838 form
+    recommended by the XMLTV DTD.
+

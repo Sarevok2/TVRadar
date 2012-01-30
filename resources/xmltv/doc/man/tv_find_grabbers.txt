@@ -1,0 +1,45 @@
+NAME
+    tv_find_grabbers - Find all xmltv-grabbers that are installed on the
+    system.
+
+SYNOPSIS
+    tv_find_grabbers --help
+
+    tv_find_grabbers [-I <dir>] [capability] ...
+
+DESCRIPTION
+    tv_find_grabbers searches the PATH for XMLTV-grabbers and returns a list
+    of all grabbers that it finds. The list contains one entry per line in
+    the format
+
+    /usr/bin/tv_grab_dk|Denmark
+
+    i.e. the name of the executable and the region that it serves separated
+    by a vertical bar.
+
+OPTIONS
+    -I <dir> Include a directory in the search for grabbers. May be used
+    multiple times. The default is to search the PATH.
+
+    --verbose Print progress information.
+
+AUTHOR
+    Mattias Holmlund, mattias -at- holmlund -dot- se.
+
+COPYRIGHT
+    Copyright (C) 2005 Mattias Holmlund.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation; either version 2 of the License, or (at your
+    option) any later version.
+
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+    Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+

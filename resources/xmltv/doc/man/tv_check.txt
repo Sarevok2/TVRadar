@@ -1,0 +1,49 @@
+NAME
+    tv_check - Check TV guide listings
+
+SYNOPSIS
+    tv_check [--myreplaytv=UNIT,USERNAME,PASSWORD] --configure|--scan [other
+    options]
+
+DESCRIPTIONS
+    tv_check is a Perl script that reads in a file with show information and
+    checks it against a TV guide listing, alerting you to unexpected
+    episodes or schedule changes.
+
+OPTIONS
+    --configure Run configuration GUI. Either this option or --scan must be
+    provided.
+
+    --season-reset special --configure option to remove everything but the
+    title to help new season setup. The idea is to keep everything a
+    "season-reset" search until it shows as available to record. Then you
+    update the details including record device. *expirimental*
+
+    --scan Scan TV listings. Either this option or --configure must be
+    provided.
+
+    --myreplaytv=UNIT,USERNAME,PASSWORD Specify ReplyTV options. The UNIT
+    value is the ReplayTV replay unit. The USERNAME and PASSWORD values are
+    the ReplayTV username and password. ( Multiple --myreplaytv options are
+    now supported )
+
+    --shows=FILE Specify the name of XML shows file (default: shows.xml).
+
+    --guide=FILE, --listings=FILE Specify the name of XML guide file
+    (default: guide.xml).
+
+    --html Generate output in HTML format.
+
+    --bluenew Highlights new episodes in blue (for use during the repeat
+    season)
+
+    --output=FILE Write to FILE rather than standard output
+
+    --help Provide a usage/help listing.
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Robert Eden; manpage by Kenneth J. Pronovici.
+

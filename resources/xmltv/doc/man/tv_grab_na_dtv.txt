@@ -1,0 +1,87 @@
+NAME
+    tv_grab_na_dtv - Grab TV listings from DirecTV.
+
+SYNOPSIS
+    tv_grab_na_dtv --help
+
+    tv_grab_na_dtv --configure [--config-file FILE] [--root-url URL]
+
+    tv_grab_na_dtv [--config-file FILE] [--root-url URL] [--days N]
+    [--offset N] [--channel xmltvid,xmltvid,...] [--output FILE] [--quiet]
+    [--debug]
+
+    tv_grab_na_dtv --list-channels [--config-file FILE] [--root-url URL]
+    [--output FILE] [--quiet] [--debug]
+
+DESCRIPTION
+    Output TV and listings in XMLTV format from directv.com.
+
+    First you must run tv_grab_na_dtv --configure to choose which stations
+    you want to receive.
+
+    Then running tv_grab_na_dtv with no arguments will get listings for the
+    stations you chose for five days including today.
+
+OPTIONS
+    --configure Prompt for which stations to download and write the
+    configuration file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_na_dtv.conf. This is the file written by --configure
+    and read when grabbing.
+
+    --output FILE When grabbing, write output to FILE rather than standard
+    output.
+
+    --days N When grabbing, grab N days rather than 5.
+
+    --offset N Start grabbing at today + N days.
+
+    --quiet Only print error-messages on STDERR.
+
+    --debug Provide more information on progress to stderr to help in
+    debugging.
+
+    --list-channels Output a list of all channels that data is available
+    for. The list is in xmltv-format.
+
+    --capabilities Show which capabilities the grabber supports.
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+ERROR HANDLING
+    If the grabber fails to download data, it will print an error message to
+    STDERR and then exit with a status code of 1 to indicate that the data
+    is missing.
+
+ENVIRONMENT VARIABLES
+    The environment variable HOME can be set to change where configuration
+    files are stored. All configuration is stored in $HOME/.xmltv/. On
+    Windows, it might be necessary to set HOME to a path without spaces in
+    it.
+
+    TEMP or TMP, if present, will override the directory used to contain
+    temporary files. Default is "/tmp", so under Windows one of these is
+    required.
+
+CREDITS
+    Grabber written by Rod Roark (http://www.sunsetsystems.com/), lightly
+    cloned from tv_grab_cz by Mattias Holmlund. See that grabber for
+    additional credits.
+
+BUGS
+    DirecTV might want a county ID to show local channels for some zip
+    codes. We do not support that. If you encounter this problem, try
+    entering a nearby zip code where your local channels appear by default.
+
+    The XML generated for channel information is kludged for compatibility
+    with MythTV and is not very pretty.
+
+    Like any screen-scraping grabber, this one will break regularly as the
+    web site changes, and you should try to fetch a new one from the
+    project's repository. At some point the breakage might not be fixable or
+    it may be that nobody wants to fix it. Sane people should use Schedules
+    Direct instead.
+

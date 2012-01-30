@@ -1,0 +1,113 @@
+NAME
+    tv_grab_it - Grab TV listings for Italy.
+
+SYNOPSIS
+    tv_grab_it --help
+
+    tv_grab_it [--config-file FILE] --configure
+
+    tv_grab_it [--config-file FILE] [--output FILE] [--days N] [--offset N]
+    [--quiet] [--slow] [--verbose] [--errors-in-xml] [--backend
+    SITE1[,SITE2[,SITE3]]] [--cache-slow]
+
+DESCRIPTION
+    Output TV listings for several channels available in Italy. The grabber
+    relies on parsing HTML so it might stop working at any time. The data
+    comes from different backends. This is to minimize blackouts in case of
+    site changes but also to extend the number of channels. If the grabber
+    can't find the data with the first backend it will try the second one,
+    and so on. You can specify your order of preference using the --backend
+    option.
+
+    Currently configured backends are (in default order):
+
+    skylife - grabs data from www.skylife.it
+    mtvit - grabs data from www.mtv.it
+    boingtv - grabs data from www.boingtv.it
+    sitcom1 - grabs data from www.sitcom1.it
+    raisat - grabs data from www.risat.it
+    raiit - grabs data from www.rai.it
+    iris - grabs data from www.iris.it
+    mediasetpremium - grabs data from www.mediasetpremium.it
+    First run tv_grab_it --configure to choose which channels you want to
+    download. Then running tv_grab_it with no arguments will output listings
+    in XML format to standard output.
+
+    --configure Prompt for which channels, and writes the configuration
+    file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_it.conf. This is the file written by --configure and
+    read when grabbing.
+
+    --gui OPTION Use this option to enable a graphical interface to be used.
+    OPTION may be 'Tk', or left blank for the best available choice.
+    Additional allowed values of OPTION are 'Term' for normal terminal
+    output (default) and 'TermNoProgressBar' to disable the use of
+    XMLTV::ProgressBar.
+
+    --output FILE write to FILE rather than standard output.
+
+    --days N Grab N days. The default is 7.
+
+    --offset N Start N days in the future. The default is to start from
+    today.
+
+    --quiet Suppress the progress messages normally written to standard
+    error.
+
+    --slow Downloads more details (descriptions, actors...). This means
+    downloading a new file for each programme, so it's off by default to
+    save time.
+
+    --cache-slow If you use the --cache option to speed up thing when you
+    grab data several times a week, using this option you will cache only
+    the --slow data, so you shouldn't miss changes in schedules.
+
+    --verbose Prints out verbose information useful for debugging.
+
+    --errors-in-xml Outputs warnings as programmes in the xml file, so that
+    you can see errors in your favorite frontend in addition to the default
+    STDERR.
+
+    --backend Set the backend (or backends) to use. See the examples.
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+CAVEATS
+    If you use --quiet you should also use --errors-in-xml or you won't be
+    warned about errors. Note also that, as opposed to previous versions,
+    this grabber doesn't die if it cannot find any data, but returns an
+    empty (or optionally containing just warnings) xml file instead.
+
+    The backends' data quality differs a lot. For example, mytv was very
+    basic, yet complete and uses the least amount of bandwith. Skytv has a
+    lot of channels, but unless you use it with the --slow option the data
+    is not very good (and in this case i would be VERY slow). wfactory is a
+    good overall site if you don't need the whole sky package.
+
+EXAMPLES
+    tv_grab_it --backend mtvit --configure
+        configures tv_grab_it using only the backend mtvit
+
+    tv_grab_it --backend skylife,wfactory --days 1
+        grabs one day of data overiding the default order (could also be
+        --backend skylife --backend wfactory)
+
+    tv_grab_it --cache --slow --days 3
+        grabs the full data for the next three days using the default
+        backend order and using a disk cache.
+
+RECOMMENDED USAGE
+    tv_grab_it --cache --slow --cache-slow --errors-in-xml
+
+SEE ALSO
+        xmltv(5).
+
+AUTHOR
+        Davide Chiarini, davide.chiarini@gmail.com
+
+        you can find some more help at http://lnx.htpcpoint.it/forum/
+

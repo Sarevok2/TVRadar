@@ -1,0 +1,40 @@
+NAME
+    tv_grab_na_icons - Grab channel icon images or links from zap2it.com
+
+SYNOPSIS
+    tv_grab_na_icons [--links] [--share dir]
+
+DESCRIPTIONS
+    This script goes to the zap2it web site and downloads icon links or
+    images to the share/icons directory.
+
+    It was designed to allow icons to be added by tv_grab_na_dd, but there
+    is no reason it can't be used for other purposes.
+
+    To minimize the load on zap2it.com, downloaded icons are recommended.
+    Links are available for those applications that need it.
+
+    Also to reduce the load on zap2it.com, this script should be run
+    sparingly. There is really no need to run it frequently, new networks or
+    icons don't show up that often. To emphasize that point, there is no
+    --configure mode, the questions need to be answered each run.
+
+OPTIONS
+    --links
+        Store imge URLs in *.url files instead of downloading images.
+
+    -share *SHAREDIR*
+        Icons are stored in *SHAREDIR*/icons. The share directory is set at
+        install time, but there may be times when it needs to be specified.
+        (for example: no write access to the default share directory)
+
+        --version Show the version of the grabber.
+
+        --help Print a help message and exit.
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Robert Eden
+

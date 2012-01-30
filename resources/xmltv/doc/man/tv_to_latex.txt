@@ -1,0 +1,22 @@
+NAME
+    tv_to_latex - Convert XMLTV listings to LaTeX source.
+
+SYNOPSIS
+    tv_to_latex [--help] [--output FILE] [FILE...]
+
+DESCRIPTION
+    Read XMLTV data and output LaTeX source for a summary of listings. The
+    programme titles, subtitles, times and channels are shown.
+
+    --output FILE write to FILE rather than standard output
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Ed Avis, ed@membled.com
+
+BUGS
+    The LaTeX source generated is not perfect, it sometimes produces
+    spurious blank lines in the output.
+

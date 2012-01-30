@@ -1,0 +1,53 @@
+NAME
+    tv_grab_pt - Grab TV listings for Portugal.
+
+SYNOPSIS
+    tv_grab_pt --help
+
+    tv_grab_pt [--config-file FILE] --configure [--gui OPTION]
+
+    tv_grab_pt [--config-file FILE] [--output FILE] [--quiet] [--icons]
+
+    tv_grab_pt --list-channels
+
+DESCRIPTION
+    Output TV listings for several channels available in Portugal. It
+    supports the public network and the private NetCabo network.
+
+    First run tv_grab_pt --configure to choose, which channels you want to
+    download. Then running tv_grab_pt with no arguments will output listings
+    in XML format to standard output.
+
+    --configure Prompt for which channels, and write the configuration file.
+
+    --gui OPTION Use this option to enable a graphical interface to be used.
+    OPTION may be 'Tk', or left blank for the best available choice.
+    Additional allowed values of OPTION are 'Term' for normal terminal
+    output (default) and 'TermNoProgressBar' to disable the use of
+    Term::ProgressBar.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_pt.conf. This is the file written by --configure and
+    read when grabbing.
+
+    --output FILE Write to FILE rather than standard output.
+
+    --quiet Suppress the progress messages normally written to standard
+    error.
+
+    --icons Fetches channels icons/logos
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    Bruno Tavares, gawen@users.sourceforge.net, based on tv_grab_es, from
+    Ramon Roca.
+
+    Grabber Site : http://bat.is-a-geek.com/XMLGrabPt
+
+BUGS

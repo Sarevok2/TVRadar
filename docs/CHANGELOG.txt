@@ -1,0 +1,18 @@
+Version 0.611
+- Fixed bug where download would sometimes halt because of progress going out of bounds
+
+Version 0.61
+- Added method to schedule background downloads using the operating system's task scheduler
+- Cleaned up code
+
+Version 0.6
+- Redid the first time wizard
+		
+- Changed error handling for entire program to use Java Exceptions
+ instead of int error codes
+- Now using SwingWorker object to do background tasks.
+
+
+
+Version 0.5
+- First release

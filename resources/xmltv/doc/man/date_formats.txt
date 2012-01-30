@@ -1,0 +1,124 @@
+This is an extract from the documentation of Perl's Date::Manip module,
+describing the different format strings that may be used for dates.
+Bear in mind that depending on your Windows version you will need to
+quote the % characters on the command line somehow (see README.win32).
+
+    The format options are:
+
+     Year
+         %y     year                     - 00 to 99
+         %Y     year                     - 0001 to 9999
+         %G     year, Sunday as first
+                day of week              - 0001 to 9999 (see below)
+         %L     year, Monday as first
+                day of week              - 0001 to 9999 (see below)
+     Month, Week
+         %m     month of year            - 01 to 12
+         %f     month of year            - " 1" to "12"
+         %b,%h  month abbreviation       - Jan to Dec
+         %B     month name               - January to December
+         %U     week of year, Sunday
+                as first day of week     - 01 to 53 (see below)
+         %W     week of year, Monday
+                as first day of week     - 01 to 53 (see below)
+     Day
+         %j     day of the year          - 001 to 366
+         %d     day of month             - 01 to 31
+
+         %e     day of month             - " 1" to "31"
+         %v     weekday abbreviation     - " S"," M"," T"," W","Th"," F","Sa"
+         %a     weekday abbreviation     - Sun to Sat
+         %A     weekday name             - Sunday to Saturday
+         %w     day of week              - 1 (Monday) to 7 (Sunday)
+         %E     day of month with suffix - 1st, 2nd, 3rd...
+     Hour
+         %H     hour                     - 00 to 23
+         %k     hour                     - " 0" to "23"
+         %i     hour                     - " 1" to "12"
+         %I     hour                     - 01 to 12
+         %p     AM or PM
+     Minute, Second, Timezone
+         %M     minute                   - 00 to 59
+         %S     second                   - 00 to 59
+         %s     seconds from 1/1/1970 GMT- negative if before 1/1/1970
+         %o     seconds from Jan 1, 1970
+                in the current time zone
+         %Z     timezone                 - "EDT"
+         %z     timezone as GMT offset   - "+0100"
+     Date, Time
+         %c     %a %b %e %H:%M:%S %Y     - Fri Apr 28 17:23:15 1995
+         %C,%u  %a %b %e %H:%M:%S %z %Y  - Fri Apr 28 17:25:57 EDT 1995
+         %g     %a, %d %b %Y %H:%M:%S %z - Fri, 28 Apr 1995 17:23:15 EDT
+         %D     %m/%d/%y                 - 04/28/95
+         %x     %m/%d/%y or %d/%m/%y     - 04/28/95 or 28/04/28
+                                           (Depends on DateFormat variable)
+         %l     date in ls(1) format
+                  %b %e $H:$M            - Apr 28 17:23  (if within 6 months)
+                  %b %e  %Y              - Apr 28  1993  (otherwise)
+         %r     %I:%M:%S %p              - 05:39:55 PM
+         %R     %H:%M                    - 17:40
+         %T,%X  %H:%M:%S                 - 17:40:58
+         %V     %m%d%H%M%y               - 0428174095
+         %Q     %Y%m%d                   - 19961025
+         %q     %Y%m%d%H%M%S             - 19961025174058
+         %P     %Y%m%d%H%M%S             - 1996102517:40:58
+         %O     %Y-%m-%dT%H:%M:%S        - 1996-10-25T17:40:58
+         %F     %A, %B %e, %Y            - Sunday, January  1, 1996
+         %J     %G-W%W-%w                - 1997-W02-2
+         %K     %Y-%j                    - 1997-045
+     Other formats
+         %n     insert a newline character
+         %t     insert a tab character
+         %%     insert a `%' character
+         %+     insert a `+' character
+     The following formats are currently unused but may be used in the future:
+         N 1234567890 !@#$^&*()_|-=\`[];',./~{}:<>?
+     They currently insert the character following the %, but may (and probably
+     will) change in the future as new formats are added.
+
+    If a lone percent is the final character in a format, it is ignored.
+
+    Note that the ls format (%l) applies to date within the past OR future 6
+    months!
+
+    The %U, %W, %L, and %G formats are used to support the ISO-8601 format:
+    YYYY-wWW-D. In this format, a date is written as a year, the week of the
+    year, and the day of the week. Technically, the week may be considered
+    to start on any day of the week, but Sunday and Monday are the both
+    common choices, so both are supported.
+
+    The %W and %G formats return the week-of-year and the year treating
+    weeks as starting on Monday.
+
+    The %U and %L formats return the week-of-year and the year treating
+    weeks as starting on Sunday.
+
+    Most of the time, the %L and %G formats returns the same value as the %Y
+    format, but there is a problem with days occuring in the first or last
+    week of the year.
+
+    The ISO-8601 representation of Jan 1, 1993 written in the YYYY-wWW-D
+    format is actually 1992-W53-5. In other words, Jan 1 is treates as being
+    in the last week of the preceding year. Depending on the year, days in
+    the first week of a year may belong to the previous year, and days in
+    the final week of a year may belong to the next year. The week is
+    assigned to the year which has most of the days. For example, if the
+    week starts on Sunday, then the last week of 2003 is 2003-12-28 to
+    2004-01-03. This week is assigned to 2003 since 4 of the days in it are
+    in 2003 and only 3 of them are in 2004. The first week of 2004 starts on
+    2004-01-04.
+
+    The %U and %W formats return a week-of-year number from 01 to 53.
+
+    %J returns the full ISO-8601 format (%G-W%W-%w).
+
+    The %s and %o formats return negative values if the date is before the
+    start of the epoch. Other unix utilities would return an error, or a
+    zero, so if you are going to use Date::Manip in conjuction with these,
+    be sure to check for a negative value.
+
+    The formats used in this routine were originally based on date.pl
+    (version 3.2) by Terry McGonigal, as well as a couple taken from
+    different versions of the Solaris date(1) command. Also, several have
+    been added which are unique to Date::Manip.
+

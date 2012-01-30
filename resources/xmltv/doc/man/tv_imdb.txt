@@ -1,0 +1,143 @@
+NAME
+    tv_imdb - Augment XMLTV listings files with imdb.com data.
+
+SYNOPSIS
+    tv_imdb --imdbdir <dir> [--help] [--quiet] [--download] [--prepStage
+    (1-7,all)]
+
+    tv_imdb --imdbdir <dir> [--help] [--quiet]
+    [--movies-only][--stats][--output FILE] [FILE...]
+
+DESCRIPTION
+    Very similar to tv_cat in symantics (see tv_cat) except whenever a
+    programme appears with "date" entry the title and date are used to look
+    up extra data by using the XMLTV::IMDB package.
+
+    --output FILE write to FILE rather than standard output
+
+    --quiet disable all status messages (that normally appear on stderr).
+
+    --download try to download data files if they are missing (in
+    --prepStage).
+
+    --stats force output of grab stats (stats output disabled in --quiet
+    mode).
+
+    --movies-only only augment programs that look like movie listings (4
+    digit 'date' field).
+
+    All programs are checked against imdb.com data (unless --movies-only is
+    used).
+
+    For the purposes of tv_imdb, an "exact" match is defined as a case
+    insensitive match gainst imdb.com data (which may or may not include the
+    transformation of '&' to 'and' and vise-versa.
+
+    If the program includes a 4 digit 'date' field the following is matches
+    are attempted, the first succeeding match is used:
+
+    1. an "exact" title/year match against movie titles is done
+
+    2. an "exact" title match against tv series (and tv mini series)
+
+    3. an "exact" title match against movie titles with production dates
+
+    within 2 years of the 'date' value.
+
+    Unless --movies-only is used, if the program does not include a 4 digit
+    'date' field the following matches are attempted, the first succeeding
+    match is used:
+
+    1. an "exact" title match against tv series (and tv mini series)
+
+    When a match is found in the imdb.com data the following is applied:
+
+    1. the 'title' field is set to match exactly the title from the imdb.com
+    data. This includes modification of the case to match and any
+    transformations mentioned above.
+
+    2. if the match is a movie, the 'date' field is set to imdb.com 4 digit
+    year of production.
+
+    3. the type of match found (Movie, TV Movie, Video Movie, TV Series, or
+    TV Mini Series) is placed in the 'categories' field.
+
+    4. the url to the www.imdb.com page is added
+
+    5. the director is added if the match was a movie or if only one
+    director is listed in the imdb.com data (because some tv series have >
+    30 directors)
+
+    6. the top 3 billing actors are added.
+
+    7. genres added to 'categories' field (current list of genres are Short,
+    Drama, Comedy, Documentary, Animation, Adult, Action, Family, Romance,
+    Crime, Thriller, Musical, Adventure, Western, Horror, Sci-Fi, Fantasy,
+    Mystery, War, Film-Noir, Music
+
+    8. imdb user ratings added to 'star-ratings' field.
+
+HOWTO
+In order to use tv_imdb, you need:
+    1. choose a directory location to use for the tv_imdb database (you'll
+    need about 1/2 GB of free space),
+
+    2a. run 'tv_imdb --imdbdir <dir> --prepStage all --download' to download
+    the list files from imdb.com. Or,
+
+    2b If you have a slow network connection you may prefer to omit the
+    '--download' flag and be prompted for what you need to download by hand.
+    See <http://www.imdb.com/interfaces> for the download sites. Then once
+    you have the files rerun without '--download'.
+
+    Note: '--prepStage' sucks a bit of memeory, but you can run each
+    prepStage separately by running --prepStage with each of the stages (see
+    --help for details).
+
+    3. Once you have the database loaded try 'cat tv.xml | tv_imdb --imdbdir
+    <dir> > tv1.xml'.
+
+    Feel free to report any problems with these steps to
+    xmltv-devel@lists.sf.net.
+
+BUGS
+    The '--prepStage' needs a lot of memory to run at a reasonable speed,
+    over 200 megabytes with the current imdb data files. For there to be 200
+    megabytes free for tv_imdb, the system will need at least 256 megabytes
+    of RAM. Running with less can take hours (or days!) - although
+    fortunately this stage needs to be run only once after downloading the
+    data files.
+
+    Could use a --configure step just like the grabbers so you do not have
+    to specify the --imdbdir on the command line every time. Also this could
+    step you through the prep stages with more description of what is being
+    done and what is required. Configure could also control the number of
+    actors to add (since some movies have an awful lot), currently we are
+    adding the top 3.
+
+    How and what to look up needs to be option driven.
+
+    Needs some more controls for fine tuning "close" matches. For instance,
+    currently it looks like the North America grabber only has date entries
+    for movies, but the imdb.com data contains made for video movies as well
+    as as real movies, ot is it's possible to get the wrong data to be
+    inserted. In this case we may want to say "ignore tv series" and "ignore
+    tv mini series". Along with this, we'd want to define what a "close"
+    match is. For instance does a movie by the same title with a date out by
+    1 year or 2 years considered a match (currently we're using 2).
+
+    Nice to haves include: verification/addition of programe MPAA/VCHIP
+    ratings, addition of imdb.com user ratings (by votes) to programes.
+    Potenially we could expand to include "country of origin",
+    "description", "writer" and "producer" credits, maybe even
+    "commentator".
+
+    Heh, if the XMLTV.dtd supported it, we could even include urls to head
+    shots of the actors :)
+
+SEE ALSO
+    xmltv(5)
+
+AUTHOR
+    Jerry Veldhuis, jerry@matilda.com
+

@@ -1,0 +1,6 @@
+advanced search
+Option for click tooltips
+Search caching
+Run without console
+Change error codes to enum
+Make Android version

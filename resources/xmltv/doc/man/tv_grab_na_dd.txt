@@ -1,0 +1,297 @@
+NAME
+    tv_grab_na_dd - Grab TV listings for North America using Schedules
+    Direct http://www.schedulesdirect.org
+
+SYNOPSIS
+        tv_grab_na_dd --help
+
+        tv_grab_na_dd --version
+
+        tv_grab_na_dd --capabilities
+
+        tv_grab_na_dd --configure [--config-file FILE] [--dd-data FILE]
+                                  [--reprocess] [--auto-config add|ignore]
+                                  [--gui OPTION]
+
+        tv_grab_na_dd --list-lineups [--config-file FILE] [--dd-data FILE]
+                                     [--reprocess]
+
+        tv_grab_na_dd [--config-file FILE] [--dd-data FILE]
+                      [--reprocess] [--auto-config add|ignore]
+                      [--days N] [--offset N] [--quiet] [--notrim]
+                      [--old-chan-id] [--low-mem] [--output FILE]
+                      [--list-channel] [--share SHAREDIR] [--list-times]
+                      [--download-only] [--padd n] [--dropbadchar] [--agent NAME]
+
+DESCRIPTION
+    This script downloads TV listings using Schedules Direct's data service,
+    converts it to XMLTV format, and outputs the results.
+
+    You must first register with Schedules Direct at:
+    <http://www.schedulesdirect.org>
+
+    Schedules Direct is a non-profit organization whose mission is to
+    provide low-cost television program guide data to end-users of Open
+    Source and Freeware applications.
+
+    The raw data source is Tribune Media Service's Data Direct Service,
+    which is very similar to the free Zap2IT Labs service Tribune previously
+    offerred.
+
+    While the service is not available for free, Schedules Direct strives to
+    keep costs as low as possible.
+
+    First you must become a member at the <http://www.schedulesdirect.org>
+    site.
+
+    Next, you use that website to add lineup(s) to your account.
+
+    Next, you execute "tv_grab_na_dd --configure" to set up the grabber.
+
+    Finally, you execute tv_grab_na_dd with no arguments and it will output
+    listings in XML format to standard output. See below for other options.
+
+Stand-alone options
+    --help
+        Print a help message and exit.
+
+    --version
+        Show the version of the grabber.
+
+    --capabilities
+        Show which capabilities the grabber supports. For more information,
+        see <http://xmltv.org/wiki/xmltvcapabilities.html>
+
+Mode selection (default is grab mode)
+    --configure
+        Activates configure mode. If a config file already exists the values
+        are used as defaults.
+
+    --gui OPTION
+        Use this option to enable a graphical interface to be used. OPTION
+        may be 'Tk', or left blank for the best available choice. Additional
+        allowed values of OPTION are 'Term' for normal terminal output
+        (default) and 'TermNoProgressBar' to disable the use of
+        Term::ProgressBar.
+
+    --list-lineups
+        Lists available lineups. Only requires username in the config file.
+        Used by programs that automate the "--configure" process.
+
+General Options
+    --config-file *file*
+        Set the name of the configuration file, the default is
+        ~/.xmltv/tv_grab_na_dd.conf. This is the file created during
+        "--configure" mode.
+
+    --dd-data *file*
+        Store raw Data Direct data to this file. (default is a temporary
+        file)
+
+    --reprocess
+        Don't get data from Data Direct, but reprocess a file saved with
+        --dd-data.
+
+    --auto-config *add|ignore*
+        When used in --configure mode, updates the config file, removing old
+        channels, and adding or ignoring new channels. Prompts are skipped
+        if defaults are available in the current config file.
+
+        When used in grab mode, appends new channels to the config file.
+
+Grabber Mode options
+    --days *n*
+        Grab *n* days. The default is 7.
+
+    --offset *n*
+        Start N days after the default.
+
+    --quiet
+        Suppress some messages normally written to standard error.
+
+    --notrim
+        Data Direct includes shows in progress at the start time. The
+        default behavior is to filter these shows out so data can be cleanly
+        split between days. This option turns off that filter so you get
+        shows in progress a tthe start time.
+
+    --old-chan-id
+        Use a channel id similar to the one used by the old tv_grab_na
+        grabber.
+
+    --low-mem
+        Omit all but the most basic program information. Reduces memory
+        usage.
+
+    --output *file*
+        Write xml to *file* rather than standard output.
+
+    --list-channel
+        Same as --days 0
+
+    --share *SHAREDIR*
+        tv_grab_na_icons stores icons in *SHAREDIR*/icons. The share
+        directory is set at install time, but there may be times when it
+        needs to be specified. (for example: no write access to the default
+        share directory)
+
+    --list-times
+        Report to STDERR the Schedules Direct blockedTime (not currently
+        enforced) and suggestedTime values to assist automated processes
+        with scheduling.
+
+    --download-only
+        Don't generate any output, just fetch the data. Personally I don't
+        see the point, but it was requested and easy to add.
+
+    --padd *n*
+        Add <n> spaces to the front of the start date. This is normally not
+        needed, but can be helpful in working around a Tribune problem when
+        the request packet spans TCP packets. Recommended initial value is
+        "20". This is only needed if you get "invalid start time" messages.
+        If this helps, please post results to the list.
+
+    --dropbadchar
+        DD data is supposed to be in UTF-8 format. Sometimes DD sends bad
+        characters which cause a "Bad XML from DD" error. This option causes
+        those bad characters to be deleted.
+
+    --agent NAME
+        appends NAME to the http agent string when fetching data. This is a
+        polite way to tell Schedules Direct which application is being used.
+        It helps developers know how many people are using their application
+        and gives applications credit towards free accounts.
+
+Automating configuration
+    Sometimes applications want to call tv_grab_na_dd as a standalone
+    application, but automate the configure process. The best way is to hook
+    in to the XMLTV::Ask module, but if that's not available, here is a
+    solution.
+
+        Step1. Application creates config file with username (and optionally
+        password).
+
+        Step2. "tv_grab_na_dd --dd-data lineups.xml --list-lineups"
+
+        Step3. Application adds desired lineup to config file.
+
+        Step4. "tv_grab_na_dd --dd-data lineups.xml --reprocess
+        --auto-config add --list-channels"
+
+        Step5. Application edits config file as needed, and deletes
+        lineups.xml.
+
+Grabber Timing
+    Data Direct offers a "suggested download time" that can be retrieved
+    with the "--list-times" option. Its use is encouraged.
+
+Handling Multiple Linups
+    tv_grab_na_dd only outputs a single lineup. If your Schedules Direct
+    account has multiple lineups, they are all downloaded even though only
+    one is output.
+
+    To process multiple lineups, use separate --config-file. Separate config
+    files are also handy if you need different channel sets for a lineup
+    (common with MythTV). To prevent re-downloading the data on subsequent
+    passes, the "--reprocess" option is recommended.
+
+    Here's an example: (the = sign is optional, but helps readability)
+
+     tv_grab_na_dd --config-file=lineup1.dat --output=lineup1.xml --dd-data=dd.xml
+     tv_grab_na_dd --config-file=lineup2.dat --output=lineup2.xml --dd-data=dd.xml --reprocess
+     tv_grab_na_dd --config-file=lineup3.dat --output=lineup3.xml --dd-data=dd.xml --reprocess
+
+    Each config file specifies the desired lineup and channel list.
+
+    If you want to merge the lineups into a single file, you can use tv_cat
+
+     tv_cat lineup1.xml lineup2.xml lineup3.xml >guide.xml
+
+Non-US/Canada listings. "fake" postal codes.
+    TMS's Data direct service proivdes listings for a few non US/Canada
+    locations. These are accessed with "fake" postal codes. The following
+    are available:
+
+        147BERM Bermuda Cablevision
+        366HAMI Hamilton, Bermuda Wow World on Wireless
+        101VENE DirecTV Latin America
+        904MEXI Mexico #1
+        954MEXI Mexico #2
+        512TRIN Trinidad Express
+        782YOKO Yokota AFB, Japan. Americable International
+
+    For a more complete list, check the Schedules Direct FAQ
+
+Adding icon links to listings
+    tv_grab_na_dd checks for channel icons in a directory *share*/icons. The
+    *share* directory is usually set during the install. For windows exe
+    users, it defaults to the location where xmltv.exe is. tv_grab_na_icons
+    is available to download the icons.
+
+Notes on channel lists
+    Channel lists can be configured both at the Schedules Direct website and
+    through the grabber. This is done to allow multiple config files with
+    different channel lists as Schedules Direct only supports a single
+    channel map per lineup.
+
+    Similarly, tv_grab_na_dd only supports a single channel mapping for a
+    station. If multiple mappings are detected, only the first one is used
+    and you are advised to adjust your Schedules Direct lineup.
+
+Notes on episode numbers
+    Three episode-num formats are supplied (when available)
+
+    xmltv_ns
+        always "..a/b" for part "a" of "b". First two xmltv_ns fields always
+        blank.
+
+    dd_progid
+        TMS generated "a.b.c/d" where "a" is a unique program id, "b" is a
+        unique episode id, "c/d" is part "c" of "d" similar to xmltv_ns.
+
+    onscreen
+        Distributor-designated number corresponding to an episode of a
+        specific show. Varies by distributor.
+
+Notes on passwords
+    If a password is stored in the config file, the config file should be
+    properly protected. Instead of storing the password in the config file,
+    it can be omitted, and will be prompted for.
+
+Notes on lineup changes
+    Data Direct currently adds a channel to your lineup automatically when
+    it is available. When tv_grab_na_dd sees the new channel in the
+    Schedules Direct lineup, it prints a message (and potentially adds or
+    ignores it based on --auto-config).
+
+    If you are sensitive to bandwidth issues, I would set --auto-config
+    ignore and periodically check your --config-file for ignored channels
+    and remove from your Schedules Direct lineup.
+
+Notes on previously-shown
+    Previous releases of tv_grab_na_dd set XMLTV's "date" field for DD
+    "original-air-date" field. The correct place for the data is
+    "previously-shown->start" The OAD is in both places temporarily for
+    compatability reasons.
+
+    DD has dropped the "repeat" flag and replaced it with a "new" flag. Now
+    we set "previously-shown
+
+Known issues
+    none!
+
+SEE ALSO
+    xmltv(5).
+
+Author
+    Author/Maintainer: Robert Eden, rmeden@yahoo.com
+
+  Contributors:
+        Ed Avis, ed@membled.com
+
+        Don Huettl, drh@huettl.net
+
+        Matti Airas, mairas@iki.fi (I used tv_grab_fi as a template)
+
+        and of course everyone else I forgot to mention. :)
+

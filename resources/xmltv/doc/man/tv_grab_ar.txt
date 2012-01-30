@@ -1,0 +1,73 @@
+NAME
+    tv_grab_ar - Grab TV listings for Argentina.
+
+SYNOPSIS
+    tv_grab_ar --help
+
+    tv_grab_ar [--config-file FILE] --configure [--gui OPTION]
+
+    tv_grab_ar [--config-file FILE] [--output FILE] [--days N] [--offset N]
+    [--quiet]
+
+    tv_grab_ar --list-channels
+
+    tv_grab_ar --capabilities
+
+    tv_grab_ar --version
+
+DESCRIPTION
+    Output TV listings for several channels available in Argentina. Now
+    supports the terrestrial analog tv listings, which is the most common tv
+    viewed in Argentina. The tv listings comes from
+    http://www.buscadorcablevision.com.ar/ The grabber relies on parsing
+    HTML so it might stop working at any time.
+
+    First run tv_grab_ar --configure to choose, which channels you want to
+    download. Then running tv_grab_ar with no arguments will output listings
+    in XML format to standard output.
+
+    --configure Prompt for which channels, and write the configuration file.
+
+    --config-file FILE Set the name of the configuration file, the default
+    is ~/.xmltv/tv_grab_ar.conf. This is the file written by --configure and
+    read when grabbing.
+
+    --gui OPTION Use this option to enable a graphical interface to be used.
+    OPTION may be 'Tk', or left blank for the best available choice.
+    Additional allowed values of OPTION are 'Term' for normal terminal
+    output (default) and 'TermNoProgressBar' to disable the use of
+    XMLTV::ProgressBar.
+
+    --output FILE Write to FILE rather than standard output.
+
+    --days N Grab N days. The default is 3.
+
+    --offset N Start N days in the future. The default is to start from
+    today.
+
+    --quiet Suppress the progress messages normally written to standard
+    error.
+
+    --capabilities Show which capabilities the grabber supports. For more
+    information, see
+    <http://membled.com/twiki/bin/view/Main/XmltvCapabilities>
+
+    --version Show the version of the grabber.
+
+    --help Print a help message and exit.
+
+SEE ALSO
+    xmltv(5).
+
+AUTHOR
+    1.6 Mariano S. Cosentino, Mok@marianok.com.ar 1.5 Christian A.
+    Rodriguez, car@cespi.unlp.edu.ar, based on tv_grab_es, from Ramon Roca.
+
+BUGS
+    This grabber extracts all information from cablevision website. Any
+    change in this web page may cause this grabber to stop working.
+    Retrieving the description information adds a considerable amount of
+    time to the run and makes the file quite large. migth be a good idea to
+    add a cache file the keeps the program description so there is no need
+    to fetch it.
+
